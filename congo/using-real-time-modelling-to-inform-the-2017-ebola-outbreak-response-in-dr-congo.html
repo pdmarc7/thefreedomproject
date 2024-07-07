@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Using real-time modelling to inform the 2017 Ebola outbreak response in DR Congo | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="Using real-time modelling to inform the 2017 Ebola outbreak response in DR Congo">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41467-024-49888-5/MediaObjects/41467_2024_49888_Fig1_HTML.png">
+	<meta property="og:url" content="https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3Lm5hdHVyZS5jb20vYXJ0aWNsZXMvczQxNDY3LTAyNC00OTg4OC010gEA?oc=5&hl=en-US&gl=US&ceid=US:en">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41467-024-49888-5/MediaObjects/41467_2024_49888_Fig1_HTML.png">
+	<meta name="twitter:title" content="Using real-time modelling to inform the 2017 Ebola outbreak response in DR Congo">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41467-024-49888-5/MediaObjects/41467_2024_49888_Fig1_HTML.png">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">Using real-time modelling to inform the 2017 Ebola outbreak response in DR Congo</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Ahuka-Mundeke, Nsio-Mbeta</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">06 July, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41467-024-49888-5/MediaObjects/41467_2024_49888_Fig1_HTML.png" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div><p>The 2014&#8211;16 Ebola virus disease (EVD) epidemic in West Africa was a stark reminder of the need for rapid response to control emerging infectious disease outbreaks<a title="WHO Ebola Response Team. Ebola virus disease in West Africa&#8212;the first 9 months of the epidemic and forward projections. N. Engl. J. Med. 371, 1481&#8211;1495 (2014)." href="#ref-CR1" id="ref-link-section-d231825293e687">1</a>,<a title="Lindblade, K. A. et al. Decreased Ebola transmission after rapid response to outbreaks in remote areas, Liberia, 2014. Emerg. Infect. Dis. 21, 1800&#8211;1807 (2015)." href="#ref-CR2" id="ref-link-section-d231825293e687_1">2</a>,<a title="Chretien, J.-P., Riley, S. &amp; George, D. B. Mathematical modeling of the West Africa Ebola epidemic. eLife 4, e09186 (2015)." href="#ref-CR3" id="ref-link-section-d231825293e687_2">3</a>,<a title="Polonsky, J. et al. Outbreak analytics: a developing data science for informing the response to emerging pathogens. Philos. Trans. R. Soc. B 374, 20180276 (2019)." href="/articles/s41467-024-49888-5#ref-CR4" id="ref-link-section-d231825293e690">4</a>. In recent years, epidemiological modelling has increasingly been used to track pathogen transmission and to guide public health measures against a range of diseases<a title="Heesterbeek, H. et al. Modeling infectious disease dynamics in the complex landscape of global health. Science 347, aaa4339 (2015)." href="#ref-CR5" id="ref-link-section-d231825293e694">5</a>,<a title="Thompson, R. N. &amp; Brooks-Pollock, E. Detection, forecasting and control of infectious disease epidemics: modelling outbreaks in humans, animals and plants. Philos. Trans. R. Soc. B 374, 20190038 (2019)." href="#ref-CR6" id="ref-link-section-d231825293e694_1">6</a>,<a title="Hollingsworth, T. D. Controlling infectious disease outbreaks: lessons from mathematical modelling. J. Public Health Policy 30, 328&#8211;341 (2009)." href="#ref-CR7" id="ref-link-section-d231825293e694_2">7</a>,<a title="Thompson, R. N. Epidemiological models are important tools for guiding COVID-19 interventions. BMC Med. 18, 152 (2020)." href="#ref-CR8" id="ref-link-section-d231825293e694_3">8</a>,<a title="Woolhouse, M. How to make predictions about future infectious disease risks. Philos. Trans. R. Soc. B Biol. Sci. 366, 2045&#8211;2054 (2011)." href="/articles/s41467-024-49888-5#ref-CR9" id="ref-link-section-d231825293e697">9</a>. However, beyond the timely deployment of interventions, identifying the adequate level of outbreak response and understanding how to adjust measures over time are challenging issues<a title="Hine, D. The 2009 Influenza Pandemic: An Independent Review of the UK Response to the 2009 Influenza Pandemic (Cabinet Office, London, 2010)." href="#ref-CR10" id="ref-link-section-d231825293e701">10</a>,<a title="Cori, A. et al. Key data for outbreak evaluation: building on the Ebola experience. Philos. Trans. R. Soc. B 372, 20160371 (2017)." href="#ref-CR11" id="ref-link-section-d231825293e701_1">11</a>,<a title="Shea, K., Tildesley, M. J., Runge, M. C., Fonnesbeck, C. J. &amp; Ferrari, M. J. Adaptive management and the value of information: learning via intervention in epidemiology. PLoS Biol. 12, e1001970 (2014)." href="#ref-CR12" id="ref-link-section-d231825293e701_2">12</a>,<a title="Polonsky, J. A. et al. Feasibility, acceptability, and effectiveness of non-pharmaceutical interventions against infectious diseases among crisis-affected populations: a scoping review. Infect. Dis. Poverty 11, 14 (2022)." href="#ref-CR13" id="ref-link-section-d231825293e701_3">13</a>,<a title="Thompson, R. N., Gilligan, C. A. &amp; Cunniffe, N. J. Will an outbreak exceed available resources for control? Estimating the risk from invading pathogens using practical definitions of a severe epidemic. J. R. Soc. Interface 17, 20200690 (2020)." href="/articles/s41467-024-49888-5#ref-CR14" id="ref-link-section-d231825293e704">14</a>.</p><p>An EVD outbreak occurred in 2017 in Likati Health Zone, Democratic Republic of the Congo (DRC)<a title="Hemingway-Foday, J. J. et al. Lessons learned from reinforcing epidemiologic surveillance during the 2017 Ebola Outbreak in the Likati District, Democratic Republic of the Congo. Health Secur. 18, S81&#8211;S91 (2020)." href="#ref-CR15" id="ref-link-section-d231825293e711">15</a>,<a title="Nsio, J. et al. 2017 Outbreak of Ebola virus disease in Northern Democratic Republic of Congo. J. Infect. Dis. 221, 701&#8211;706 (2019)." href="#ref-CR16" id="ref-link-section-d231825293e711_1">16</a>,<a title="Grimes, K. E. L. et al. Contextual, social and epidemiological characteristics of the Ebola Virus Disease outbreak in Likati Health Zone, Democratic Republic of the Congo, 2017. Front. Public Health. 8, 349 (2020)." href="/articles/s41467-024-49888-5#ref-CR17" id="ref-link-section-d231825293e714">17</a>. The index case developed symptoms on 27 March 2017. After eight cases had arisen in total, a response team (the Ebola Response Team; ERT) co-ordinated by the DRC Ministry of Health and the World Health Organisation was deployed and implemented a range of measures, including community engagement and risk communication, contact tracing, active case finding, isolation and treatment of suspected patients, and PCR and serology testing. After the deployment of the ERT, the key question was whether these actions were sufficient to prevent further transmission or whether additional measures were required. Around one month later, when no further cases had occurred, attention turned to when public health measures could be relaxed and the ERT could be withdrawn safely with only a small risk of outbreak resurgence. Efficient removal of control resources, when they are no longer necessary, is essential to reduce economic and social costs<a title="Linton, N. M. et al. When do epidemics end? Scientific insights from mathematical modelling studies. Centaurus 64, 31&#8211;60 (2022)." href="/articles/s41467-024-49888-5#ref-CR18" id="ref-link-section-d231825293e718">18</a>.</p><p>Mathematical models can be used both to assess the effectiveness of public health measures and to determine when interventions can be lifted safely. For example, Funk et al.<a title="Funk, S. et al. The impact of control strategies and behavioural changes on the elimination of Ebola from Lofa County, Liberia. Philos. Trans. R. Soc. B Biol. Sci. 372, 20160302 (2017)." href="/articles/s41467-024-49888-5#ref-CR19" id="ref-link-section-d231825293e725">19</a> analysed data from the beginning of the 2014&#8211;16 Ebola epidemic and demonstrated that expansion of the treatment centre and an increase in healthcare-seeking behaviour limited transmission in Lofa County, Liberia. Similarly, a range of studies attempted to unpick the effects of different interventions during the COVID-19 pandemic<a title="Flaxman, S. et al. Estimating the effects of non-pharmaceutical interventions on COVID-19 in Europe. Nature 584, 257&#8211;261 (2020)." href="#ref-CR20" id="ref-link-section-d231825293e729">20</a>,<a title="Brauner, J. M. et al. Inferring the effectiveness of government interventions against COVID-19. Science 371, eabd9338 (2021)." href="#ref-CR21" id="ref-link-section-d231825293e729_1">21</a>,<a title="Haug, N. et al. Ranking the effectiveness of worldwide COVID-19 government interventions. Nat. Hum. Behav. 4, 1303&#8211;1312 (2020)." href="/articles/s41467-024-49888-5#ref-CR22" id="ref-link-section-d231825293e732">22</a>. In terms of deciding when to remove interventions, other modelling analyses have been used to assess the &#8220;end-of-outbreak probability&#8221;: namely, the probability that an outbreak is over and no further cases will occur in future<a title="Djaafara, B. A. et al. A quantitative framework for defining the end of an infectious disease outbreak: application to Ebola virus disease. Am. J. Epidemiol. 190, 642&#8211;651 (2021)." href="#ref-CR23" id="ref-link-section-d231825293e736">23</a>,<a title="Thompson, R. N., Morgan, O. W. &amp; Jalava, K. Rigorous surveillance is necessary for high confidence in end-of-outbreak declarations for Ebola and other infectious diseases. Philos. Trans. R. Soc. B 374, 20180431 (2019)." href="#ref-CR24" id="ref-link-section-d231825293e736_1">24</a>,<a title="Nishiura, H., Miyamatsu, Y. &amp; Mizumoto, K. Objective determination of end of MERS outbreak, South Korea, 2015. Emerg. Infect. Dis. 22, 146&#8211;148 (2016)." href="#ref-CR25" id="ref-link-section-d231825293e736_2">25</a>,<a title="Akhmetzhanov, A. R., Jung, S.-M., Cheng, H.-Y. &amp; Thompson, R. N. A hospital-related outbreak of SARS-CoV-2 associated with variant Epsilon (B.1.429) in Taiwan: transmission potential and outbreak containment under intensified contact tracing, January&#8211;February 2021. Int. J. Infect. Dis. 110, 15&#8211;20 (2021)." href="#ref-CR26" id="ref-link-section-d231825293e736_3">26</a>,<a title="Linton, N. M., Akhmetzhanov, A. R. &amp; Nishiura, H. Localized end-of-outbreak determination for coronavirus disease 2019 (COVID-19): examples from clusters in Japan. Int. J. Infect. Dis. 105, 286&#8211;292 (2021)." href="#ref-CR27" id="ref-link-section-d231825293e736_4">27</a>,<a title="Lee, H. &amp; Nishiura, H. Sexual transmission and the probability of an end of the Ebola virus disease epidemic. J. Theor. Biol. 471, 1&#8211;12 (2019)." href="#ref-CR28" id="ref-link-section-d231825293e736_5">28</a>,<a title="Parag, K. V., Donnelly, C. A., Jha, R. &amp; Thompson, R. N. An exact method for quantifying the reliability of end-of-epidemic declarations in real time. PLoS Comput. Biol. 16, e1008478 (2020)." href="#ref-CR29" id="ref-link-section-d231825293e736_6">29</a>,<a title="Bradbury, N. V., Hart, W. S., Lovell-Read, F. A., Polonsky, J. A. &amp; Thompson, R. N. Exact calculation of end-of-outbreak probabilities using contact tracing data. J. R. Soc. Interface. 20, 20230374 (2023)." href="/articles/s41467-024-49888-5#ref-CR30" id="ref-link-section-d231825293e739">30</a>. Estimation of the end-of-outbreak probability is useful for informing when outbreaks can be declared over and when interventions can be removed, since this decision-making involves balancing the benefits of relaxing stringent and resource-intensive measures against the risk of additional cases.</p><p>In this article, we report mathematical modelling that we undertook during and after the 2017 EVD outbreak in Likati Health Zone, DRC, to address two key questions, specifically: (i) How effective was the ERT at reducing transmission (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig1">1</a>&#8212;Key Question 1)?; (ii) When could the ERT be withdrawn and associated public health measures relaxed without a substantial risk of further cases (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig1">1</a>&#8212;Key Question 2)? We used a branching process outbreak model to infer the level of virus transmission prior to the arrival of the ERT, as quantified by the reproduction number, \(R\). Following the deployment of the ERT, each day, we estimated the risk of additional cases occurring if the ERT was withdrawn under the assumption that \(R\) reverts to its original value (i.e., the value estimated using data from before the arrival of the ERT) in the absence of the ERT. As we show, this quantity, which we term the &#8220;risk of withdrawing the ERT&#8221;, can be used to assess the effectiveness of the ERT and to guide in-real time when the ERT can be withdrawn according to an acceptable level of risk (to be determined in a context-specific fashion). As well as providing analyses of the 2017 EVD outbreak in Likati Health Zone, our research provides a general epidemiological modelling framework that can be used during future outbreaks to assess interventions and to determine when measures can be relaxed or removed safely.</p><h3 class="c-article__sub-heading" id="Sec3">Analysing the outbreak response</h3><p>To analyse transmission in the absence of the ERT, we began by estimating the value of \(R\) using: (i) the incidence data from 27 March to 14 May 2017 and (ii) a distributional estimate of the EVD serial interval (see the &#8220;Methods&#8221; section and Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">1</a>). This range of dates represents the time period from the onset of disease in the index case up to the day before the arrival of the ERT (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig1">1</a>). In the absence of the ERT, the median reproduction number estimate was \(R=1.49\) (95% credible interval 0.67&#8211;2.81; Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2A</a>).</p><p>Following the arrival of the ERT, no further cases occurred in the outbreak. On each day, we estimated the probability that future cases would occur if the ERT had been withdrawn (i.e., the risk of withdrawing the ERT), under the assumption that \(R\) reverts to its original value (i.e., the value estimated using the disease incidence time series data from before the arrival of the ERT) when the ERT is withdrawn (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2B</a>). As described in the &#8220;Methods&#8221; section (Eq. (<a href="/articles/s41467-024-49888-5#Equ5">5</a>)), in this analysis the risk of withdrawing the ERT was calculated using the full distributional estimate of \(R\) in the absence of the ERT (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2A</a>).</p><p>Two things are notable from the estimated risk of withdrawing the ERT shown in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2B</a>. First, on the day that the ERT arrived, there was a high estimated probability of future cases (0.97) in the absence of the ERT. The fact that no subsequent cases occurred suggests that the ERT was effective at reducing transmission. Second, there was a very small probability of future cases in the absence of the ERT by the actual date on which the ERT was withdrawn (0.01 on 2 July 2017). Policy makers could, therefore, be confident (around&#160;99% sure) that no further cases would occur when the outbreak was declared over and the ERT was withdrawn.</p><h3 class="c-article__sub-heading" id="Sec4">Using models to guide withdrawal of the ERT</h3><p>The analysis in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2</a> demonstrates that further cases were unlikely by the time that the ERT was withdrawn from the Likati Health Zone (2 July 2017). Such analyses can be used in real-time to guide when interventions can be relaxed or removed. For example, the ERT could theoretically have been withdrawn as soon as the risk of withdrawing the ERT fell below a pre-specified threshold value. While such a threshold was not specified for this outbreak, smaller threshold values should be set when policy makers have a lower tolerance for future cases occurring. In this outbreak, if a threshold value of 0.05 had been chosen (corresponding to a &lt;5% chance of future cases), then the ERT could have been withdrawn on 21 June 2017, whereas if a more risk-averse threshold value of 0.01 had been chosen (corresponding to a &lt;1% chance of future cases), then the ERT could instead have been withdrawn on 3 July 2017, which corresponds very closely to the actual date of ERT withdrawal (2 July 2017). In practice, the outbreak was declared over and the ERT was withdrawn based on the one-size-fits-all rule of declaring EVD outbreaks over after a period of 42 days without cases (following the recovery or burial of the previous case)<a title="World Health Organization. WHO Recommended Criteria for Declaring the End of the Ebola Virus Disease Outbreak (World Health Organization, 2020)." href="/articles/s41467-024-49888-5#ref-CR31" id="ref-link-section-d231825293e1005">31</a>.</p><p>While the results in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2B</a> are based on the full distributional estimate of \(R\), other assumptions are possible. For example, if a policy maker wishes to be risk averse, they may choose to base their decision-making on analyses conducted with a high value of \(R\) rather than the full distributional estimate of \(R\). For example, if the analysis in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2B</a> is repeated but with \(R=2.56\) (corresponding to the 95th percentile estimate of \(R\) in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2A</a>), then the result shown in purple in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig3">3A</a> is obtained. Similar results but for different percentile estimates of \(R\) from the distributional estimate in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2A</a> are also shown in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig3">3A</a> (these results correspond to applying Eq. (<a href="/articles/s41467-024-49888-5#Equ4">4</a>) with different values of \(R\)).</p><p>We find that the higher the assumed value of \(R\), the longer it would have been necessary to wait before the inferred risk of future cases in the absence of the ERT was low enough for the ERT to be withdrawn (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig3">3B</a>). Similarly, if the ERT can only be withdrawn when the risk of future cases reduces below a pre-specified threshold value, then as expected a lower value of this threshold would require policy makers to wait longer before withdrawing the ERT. For example, if the median estimate of \(R\) was used, and interventions were removed as soon as the risk of future cases fell below 0.1 (i.e., 10%), then the ERT could have been withdrawn on 16 June 2017. If, instead, the 95th percentile estimate of \(R\) was used, and interventions were removed as soon as the risk of future cases fell below 0.01 (i.e., 1%), then the ERT withdrawal date would have been 6 July 2017.</p><h3 class="c-article__sub-heading" id="Sec5">Extensibility of our modelling approach</h3><p>To demonstrate how our modelling approach can be extended for use in different settings, we conducted a range of Supplementary Analyses.</p><p>In the branching process model used to generate the results shown in the main text (Figs.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2</a> and <a href="/articles/s41467-024-49888-5#Fig3">3</a>), we assumed that the number of cases each day was drawn from a Poisson distribution (see the &#8220;Methods&#8221; section). While this assumption is made frequently in such models<a title="Cori, A., Ferguson, N. M., Fraser, C. &amp; Cauchemez, S. A new framework and software to estimate time-varying reproduction numbers during epidemics. Am. J. Epidemiol. 178, 1505&#8211;1512 (2013)." href="#ref-CR32" id="ref-link-section-d231825293e1486">32</a>,<a title="Thompson, R. N. et al. Improved inference of time-varying reproduction numbers during infectious disease outbreaks. Epidemics. 29, 100356 (2019)." href="#ref-CR33" id="ref-link-section-d231825293e1486_1">33</a>,<a title="Creswell, R. et al. Heterogeneity in the onwards transmission risk between local and imported cases affects practical estimates of the time-dependent reproduction number. Philos. Trans. R. Soc. A 380, 20210308 (2022)." href="/articles/s41467-024-49888-5#ref-CR34" id="ref-link-section-d231825293e1489">34</a>, other probability distributions could be used. For example, use of a negative binomial distribution with a low value of the dispersion parameter, \(k\), allows the possibility of super-spreading events to be accounted for<a title="Parag, K. V. Sub-spreading events limit the reliable elimination of heterogeneous epidemics. J. R. Soc. Interface 18, 20210444 (2021)." href="/articles/s41467-024-49888-5#ref-CR35" id="ref-link-section-d231825293e1510">35</a>. In Supplementary Analysis&#160;<a href="/articles/s41467-024-49888-5#MOESM1">1</a> and Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">2</a>, we reproduced the results shown in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2</a> but under this alternative transmission model. We found that our main conclusions were unchanged. First, soon after the ERT was deployed, there was a high risk of future cases in the absence of the ERT (0.97 under both the assumption that \(k=0.2\) and under the alternative assumption that \(k=10\)). The fact that no cases went on to occur, despite the high risk of additional cases in the absence of the ERT, suggests that the ERT was effective. Second, by the time that the ERT was withdrawn, the risk of ERT withdrawal was estimated to be low (0.02 when \(k=0.2\) and 0.01 when \(k=10\)), indicating that the decision to withdraw the ERT was safe (Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">2B</a>).</p><p>To demonstrate the generalisability of our modelling approach, we also applied it to data from a second larger outbreak of EVD in which the ERT was deployed. Specifically, in Supplementary Analysis&#160;<a href="/articles/s41467-024-49888-5#MOESM1">2</a> and Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">3</a>, we estimated the risk of ERT withdrawal each day for an EVD outbreak with 54 cases that occurred in &#201;quateur Province of DRC in 2018. Because this was a larger outbreak than the one analysed in the main text, contact tracing allowed sufficient data to be recorded for the serial interval distribution to be estimated for this specific outbreak (rather than the general EVD serial interval estimate that we used in our main analyses&#8212;see the &#8220;Methods&#8221; section). Again, in the 2018 EVD outbreak, our estimates suggest that the ERT was only withdrawn when it was safe to do so (Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">3E</a>).</p><p>In our main analyses, we assumed that all cases were recorded. While this was a plausible assumption for the 2017 EVD outbreak in Likati Health Zone due to its small size and the extensive case finding that was undertaken, for larger EVD outbreaks underreporting of cases is common<a title="Dalziel, B. D. et al. Unreported cases in the 2014&#8211;2016 Ebola epidemic: spatiotemporal variation, and implications for estimating transmission. PLoS Negl. Trop. Dis. 12, e0006161 (2018)." href="/articles/s41467-024-49888-5#ref-CR36" id="ref-link-section-d231825293e1635">36</a>. In Supplementary Analysis&#160;<a href="/articles/s41467-024-49888-5#MOESM1">3</a> and Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">4</a>, we, therefore, extended our analysis of the larger 2018 EVD outbreak from Supplementary Analysis&#160;<a href="/articles/s41467-024-49888-5#MOESM1">2</a> to consider the effect of underreporting. This enabled us to demonstrate how unreported cases can be accounted for when estimating the risk of withdrawing the ERT (Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">4</a>). As expected, under the assumption of a higher number of unreported cases, the estimated risk of withdrawing the ERT increased. By assuming a larger extent of underreporting, more risk-averse decisions about when to withdraw the ERT can be made.</p><p>Assessing the effectiveness of control measures and determining when interventions can be removed safely is essential during infectious disease outbreaks<a title="Linton, N. M. et al. When do epidemics end? Scientific insights from mathematical modelling studies. Centaurus 64, 31&#8211;60 (2022)." href="/articles/s41467-024-49888-5#ref-CR18" id="ref-link-section-d231825293e1660">18</a>,<a title="Chowell, G. &amp; Nishiura, H. Transmision dynamics and control of Ebola virus disease: a review. BMC Med. 12, 196&#8211;196 (2014)." href="/articles/s41467-024-49888-5#ref-CR37" id="ref-link-section-d231825293e1663">37</a>. Relaxing interventions too soon presents a risk of a resurgence in cases, but leaving measures in place for longer than necessary is costly. In addition, interventions are, at best, inconvenient and, at worst, highly damaging, to the local population. In this study, we have presented analyses of the 2017 outbreak of EVD in Likati Health Zone, DRC, in which we used mathematical modelling to: (i) assess the effectiveness of the ERT for reducing transmission and (ii) estimate the risk of withdrawing the ERT each day (i.e., the risk that further cases would occur if the ERT was withdrawn) to guide decision making.</p><p>The available quantitative evidence suggests that the ERT was effective at reducing transmission during this outbreak. Based on transmission prior to the arrival of the ERT, we estimated that, had the ERT not been deployed, the risk of additional cases occurring was 0.97 (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2B</a>). Since no cases went on to occur, our analysis suggests that the ERT was effective. The ERT was then in place from 15 May to 2 July 2017. By the time the outbreak was declared over and the ERT was withdrawn, the risk of further cases had fallen to 0.01. While it was only possible to infer that the ERT was effective after the fact (given the additional information that no cases occurred following its arrival), we were able to estimate the risk of withdrawing the ERT in real-time by inferring the probability that additional cases would occur if it was removed, based on the level of transmission observed prior to the ERT&#8217;s arrival.</p><p>Policy makers could choose to remove control interventions as soon as the risk of future cases falls below a context-dependent threshold value. Lower values of this threshold correspond to a more risk-averse strategy (interventions must be maintained for longer, but with a lower risk of subsequent cases occurring, compared to when a higher threshold value is used). If a threshold value of 0.05 had been used to determine when the ERT could be withdrawn in the 2017 EVD outbreak in Likati Health Zone, then the ERT could have been withdrawn on 21 June 2017 (11 days prior to the actual date of withdrawal of the ERT; Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2B</a>).</p><p>Our main results relating to the risk of withdrawing the ERT were based on our full distributional estimate of the reproduction number, \(R\), in the absence of the ERT (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2</a>). We then explored how our results differed for individual values of \(R\) within the distributional estimate (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig3">3</a>). Basing policy decisions on a high percentile value of \(R\) would be a more risk averse choice than using the full distributional estimate of \(R\). We found that, if the ERT is withdrawn when the risk of future cases falls below 0.01, then using the 99th percentile value of \(R\) to guide decision making would have required the ERT to be deployed for longer than using the 50th percentile value of \(R\) (until 7 July 2017, rather than 2 July 2017; Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig3">3B</a>). When the full distributional \(R\) estimate was used, the corresponding withdrawal date was 3 July 2017 (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2B</a>).</p><p>The fact that higher assumed values of \(R\) require policy makers to wait longer before safe withdrawal of the ERT would have been deemed to be possible highlights the fact that considering uncertainty in the value of \(R\) in end-of-outbreak analyses is essential. Basing decisions on mean or median estimates of \(R\) alone, without considering uncertainty, could lead to interventions being removed on dates that are not supported by all available quantitative evidence. We note that the results shown in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2B</a> are based on the full distributional estimate of \(R\) derived directly from the disease incidence time series data and, therefore, account rigorously for uncertainty in the precise value of \(R\).</p><p>In our analyses of the 2017 Likati Health Zone EVD outbreak, we attributed the fact that no cases occurred after the arrival of the ERT, despite the high estimated probability of future cases in the absence of the ERT, to the ERT&#8217;s activities. While we contend that this interpretation is supported by the available quantitative evidence (as noted above, we estimated the risk of additional cases occurring had the ERT not been deployed to be 0.97, yet no further cases arose), other factors may have contributed to preventing transmission. For example, behavioural changes may have occurred in the local population to reduce viral spread even without the ERT being deployed in response to a growing awareness of the outbreak.</p><p>As with any epidemiological modelling study, the results presented here are based on simplifying assumptions. An assumption of the transmission model underlying most of our analyses (Figs.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2</a>, <a href="/articles/s41467-024-49888-5#Fig3">3</a>, S<a href="/articles/s41467-024-49888-5#MOESM1">3</a> and S<a href="/articles/s41467-024-49888-5#MOESM1">4</a>) is that the number of cases occurring each day is drawn from a Poisson distribution. While this assumption is common to many renewal equation models<a title="Cori, A., Ferguson, N. M., Fraser, C. &amp; Cauchemez, S. A new framework and software to estimate time-varying reproduction numbers during epidemics. Am. J. Epidemiol. 178, 1505&#8211;1512 (2013)." href="#ref-CR32" id="ref-link-section-d231825293e1925">32</a>,<a title="Thompson, R. N. et al. Improved inference of time-varying reproduction numbers during infectious disease outbreaks. Epidemics. 29, 100356 (2019)." href="#ref-CR33" id="ref-link-section-d231825293e1925_1">33</a>,<a title="Creswell, R. et al. Heterogeneity in the onwards transmission risk between local and imported cases affects practical estimates of the time-dependent reproduction number. Philos. Trans. R. Soc. A 380, 20210308 (2022)." href="/articles/s41467-024-49888-5#ref-CR34" id="ref-link-section-d231825293e1928">34</a>, consideration of other distributions is possible, including accounting for the possibility of super-spreading events<a title="Djaafara, B. A. et al. A quantitative framework for defining the end of an infectious disease outbreak: application to Ebola virus disease. Am. J. Epidemiol. 190, 642&#8211;651 (2021)." href="/articles/s41467-024-49888-5#ref-CR23" id="ref-link-section-d231825293e1933">23</a>,<a title="Ho, F. et al. Accounting for the potential of overdispersion in estimation of the time-varying reproduction number. Epidemiology. 34, 201&#8211;205 (2023)." href="/articles/s41467-024-49888-5#ref-CR38" id="ref-link-section-d231825293e1936">38</a>. For a fixed expected number of events on a particular day, more overdispersed distributions would be more likely to lead to zero cases on that day, but with a higher chance of a large number of cases occurring on that day reflective of a super-spreading event. To relax the assumption of a Poisson-distributed number of cases each day, we reproduced the results shown in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2</a> but instead assumed that the daily number of cases is drawn from a negative binomial distribution, allowing for the possibility of super-spreading events (Supplementary Analysis&#160;<a href="/articles/s41467-024-49888-5#MOESM1">1</a> and Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">2</a>). In a scenario in which the ERT is withdrawn as soon as the inferred risk of withdrawing the ERT reaches a pre-specified low value, we found that the ERT withdrawal date was not sensitive to our choice of dispersion parameter in the negative binomial distribution.</p><p>Another key assumption underlying our main analyses is that all cases were detected. As noted in the &#8220;Results&#8221;&#160;section, this may have been a reasonable assumption for the 2017 EVD outbreak in Likati Health Zone. However, underreporting of cases is common, not only for EVD but also for a range of other pathogens<a title="Dalziel, B. D. et al. Unreported cases in the 2014&#8211;2016 Ebola epidemic: spatiotemporal variation, and implications for estimating transmission. PLoS Negl. Trop. Dis. 12, e0006161 (2018)." href="/articles/s41467-024-49888-5#ref-CR36" id="ref-link-section-d231825293e1952">36</a>,<a title="Gibbons, C. L. et al. Measuring underreporting and under-ascertainment in infectious disease datasets: a comparison of methods. BMC Public Health. 14, 147 (2014)." href="/articles/s41467-024-49888-5#ref-CR39" id="ref-link-section-d231825293e1955">39</a>,<a title="Russell, T. W. et al. Reconstructing the early global dynamics of under-ascertained COVID-19 cases and infections. BMC Med. 18, 332 (2020)." href="/articles/s41467-024-49888-5#ref-CR40" id="ref-link-section-d231825293e1958">40</a>. We therefore conducted supplementary analyses of a different (much larger) EVD outbreak (Supplementary Analysis&#160;<a href="/articles/s41467-024-49888-5#MOESM1">2</a>; Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">3</a>), including considering the effect of unreported cases (Supplementary Analysis&#160;<a href="/articles/s41467-024-49888-5#MOESM1">3</a>; Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">4</a>), showing that the risk of withdrawing the ERT is higher when underreporting is accounted for (Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">4B</a>).</p><p>Despite the simplifications in our epidemiological model, our results strongly suggest that the measures implemented by the ERT were effective at reducing transmission during the 2017 EVD outbreak in Likati Health Zone, DRC, and that the ERT was only withdrawn when it was safe to do so. The timely application of effective control measures is extremely important during infectious disease outbreaks. Similarly, the relaxation of interventions as soon as the risk of future cases is sufficiently low allows limited control resources to be conserved. The research conducted here provides a quantitative framework that can be used to guide this decision-making in real-time during future infectious disease outbreaks.</p><h3 class="c-article__sub-heading" id="Sec8">Outbreak data</h3><p>The 2017 EVD outbreak in Likati Health Zone, DRC, comprised eight cases (five confirmed cases and three probable cases<a title="Hemingway-Foday, J. J. et al. Lessons learned from reinforcing epidemiologic surveillance during the 2017 Ebola Outbreak in the Likati District, Democratic Republic of the Congo. Health Secur. 18, S81&#8211;S91 (2020)." href="/articles/s41467-024-49888-5#ref-CR15" id="ref-link-section-d231825293e1993">15</a>,<a title="Nsio, J. et al. 2017 Outbreak of Ebola virus disease in Northern Democratic Republic of Congo. J. Infect. Dis. 221, 701&#8211;706 (2019)." href="/articles/s41467-024-49888-5#ref-CR16" id="ref-link-section-d231825293e1996">16</a>) occurring between 27 March and 11 May 2017. The ERT arrived in Likati on 15 May 2017, and no cases arose subsequently. A disease incidence time series was made available in real-time and consisted of symptom onset dates for all reported cases (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig1">1</a>).</p><h3 class="c-article__sub-heading" id="Sec9">Epidemiological model</h3><p>Pathogen transmission in the absence of the ERT was modelled using a renewal equation. In the version of the model used in our main analyses, the number of cases, \({I}_{t}\), occurring on day \(t\) is drawn from a Poisson distribution with mean</p><span class="mathjax-tex">$${\mathbb{E}}\left({I}_{t}{{{{{\rm{|}}}}}}R\right)=R{\sum }_{s=1}^{t-1}{I}_{t-s}{w}_{s}.$$</span>
+                    (1)
+                <p>In this expression, \(R\) is the reproduction number (the expected number of secondary cases generated by each case over the course of their infectious period). The notation \({w}_{s}\) represents the probability that the (discrete) serial interval takes the value \(s\) days (i.e., the probability that the interval between an infector and infectee appearing in the disease incidence time series is \(s\) days).</p><p>We assumed that the continuous serial interval distribution for EVD is a gamma distribution with a mean of 15.3 days and a standard deviation of 9.3 days<a title="Van Kerkhove, M. D., Bento, A. I., Mills, H. L., Ferguson, N. M. &amp; Donnelly, C. A. A review of epidemiological parameters from Ebola outbreaks to inform early public health decision-making. Sci. Data 2, 150019 (2015)." href="/articles/s41467-024-49888-5#ref-CR41" id="ref-link-section-d231825293e2249">41</a> (we considered an alternative serial interval distribution in Supplementary Analyses&#160;<a href="/articles/s41467-024-49888-5#MOESM1">2</a> and <a href="/articles/s41467-024-49888-5#MOESM1">3</a>). We then discretised this distribution to obtain \({w}_{s}\) (for \(s={{{{\mathrm{1,2}}}}},\ldots\)) using the method described in web appendix 11 of the Supplementary Data of the article by Cori et al.<a title="Cori, A., Ferguson, N. M., Fraser, C. &amp; Cauchemez, S. A new framework and software to estimate time-varying reproduction numbers during epidemics. Am. J. Epidemiol. 178, 1505&#8211;1512 (2013)." href="/articles/s41467-024-49888-5#ref-CR32" id="ref-link-section-d231825293e2317">32</a>. Specifically, if the probability density function of the continuous serial interval distribution is denoted by \(g(.)\), then</p><span class="mathjax-tex">$${w}_{s}=\frac{1}{N}\int\limits_{s-1}^{{s+1}}\left(1-\left|u-s\right|\right)g(u){{{{{\rm{d}}}}}}u,$$</span>
+                    (2)
+                <p>in which \(N\) is a normalising constant so that the sequence of values \(\{{w}_{s}\}_{s=1}^{\infty }\) represents a valid probability mass function. The resulting discretised serial interval distribution is shown in Fig. S<a href="/articles/s41467-024-49888-5#MOESM1">1</a>.</p><h3 class="c-article__sub-heading" id="Sec10">Inference of R</h3><p>For the purpose of our analyses of the 2017 EVD outbreak in Likati Health Zone, we labelled the date of the first case (27 March 2017) as \(t=1\). The ERT then arrived on day \(t=50\). We used the incidence data up to the day before the arrival of the ERT to estimate \(R\) in the absence of the ERT. Specifically, we assumed that the index case arose as a result of transmission from outside the local population (e.g., infection from an animal reservoir), and then calculated the normalised likelihood of the incidence data observed following the index case as a result of local transmission up to (and including) day \(t=49\),</p><span class="mathjax-tex">$$L\left(R\right)=	 \frac{1}{{M}_{1}}{\prod }_{t=2}^{49}\frac{{\left(R {\sum }_{s=1}^{t-1}{I}_{t-s}{w}_{s}\right)}^{{I}_{t}}\exp \left(-R{\sum }_{s=1}^{t-1}{I}_{t-s}{w}_{s}\right)}{{I}_{t}!},\\=	 \frac{1}{{M}_{2}}{R}^{\left({\sum }_{t=2}^{49}{I}_{t}\right)}\exp \left(-R\mathop{\sum }_{t=2}^{49}{\sum }_{s=1}^{t-1}{I}_{t-s}{w}_{s}\right).$$</span>
+                    (3)
+                <p>In these equations, the variables \({M}_{1}\) and \({M}_{2}\) are normalising constants so that \(L\left(R\right)\) represents a valid probability distribution (this is equivalent to the posterior estimate for \(R\) assuming a uniform prior). This corresponds to a gamma distribution with shape parameter \(\alpha=1+{\sum }_{t=2}^{49}{I}_{t}\) and rate parameter \(\beta={\sum }_{t=2}^{49}\mathop{\sum }_{s=1}^{t-1}{I}_{t-s}{w}_{s}=\mathop{\sum }_{s=1}^{48}{I}_{49-s}{F}_{s}\), in which \({F}_{s}\) represents the cumulative distribution function of the discretised serial interval distribution (i.e., the probability that the serial interval takes a value less than or equal to \(s\) days). The resulting distribution is shown in Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2A</a>. Additional description about the approach used to estimate \(R\) is provided in the Supplementary Information (Supplementary Text&#160;<a href="/articles/s41467-024-49888-5#MOESM1">1</a>).</p><h3 class="c-article__sub-heading" id="Sec11">The risk of withdrawing the Ebola Response Team</h3><p>Following the arrival of the ERT, no further cases occurred in the 2017 EVD outbreak (this was not true for the larger outbreak considered in Supplementary Analyses&#160;<a href="/articles/s41467-024-49888-5#MOESM1">2</a> and <a href="/articles/s41467-024-49888-5#MOESM1">3</a>). However, deployment of the ERT is costly and the interventions implemented by the ERT can be restrictive to the local population. There are, therefore, incentives to withdraw the ERT and relax or remove associated interventions as quickly as possible when the risk of a resurgence of cases is sufficiently low. We used the distributional estimate of \(R\) in the absence of the ERT (Fig.&#160;<a href="/articles/s41467-024-49888-5#Fig2">2A</a>) to determine the risk of future cases if the ERT is withdrawn on day \(t\).</p><p>For a fixed value of \(R\), the probability of future cases occurring at any time from day \(t\) onwards, if the ERT is withdrawn on day \(t\), is given by</p><span class="mathjax-tex">$$	{{{{{\rm{Risk}}}}}}\; {{{{{\rm{of}}}}}}\; {{{{{\rm{withdrawing}}}}}}\; {{{{{\rm{ERT}}}}}}\; {{{{{\rm{on}}}}}}\; {{{{{\rm{day}}}}}}\, t \\ 	=1-{{{{{\rm{Prob}}}}}} \, \left({{{{{\rm{no}}}}}}\; {{{{{\rm{cases}}}}}}\; {{{{{\rm{from}}}}}}\; {{{{{\rm{day}}}}}}\, t \, {{{{{\rm{onwards}}}}}}|R\right),\\ 	=1-\mathop{\prod }_{j=t}^{\infty }\exp \left(-R\mathop{\sum }_{s=1}^{j-1}{I}_{j-s}{w}_{s}\right),\\ 	=1-\exp \left(-R\gamma \left(t\right)\right).$$</span>
+                    (4)
+                <p>Here,we define \(\gamma \left(t\right)=\mathop{\sum }_{j=t}^{\infty }\mathop{\sum }_{s=1}^{j-1}{I}_{j-s}{w}_{s}=\mathop{\sum }_{s=1}^{t-1}{I}_{t-s}(1-{F}_{s-1})\). In these expressions, since we are calculating the probability that no cases occur from day \(t\) onwards, we set \({I}_{j-s}=0\) whenever \(j-s\ge t\).</p><p>Equation (<a href="/articles/s41467-024-49888-5#Equ4">4</a>) can be used to calculate the risk of withdrawing the ERT when the value of \(R\) is known or a single value of \(R\) is assumed. To account for uncertainty in the value of \(R\), a distributional estimate of \(R\) can be incorporated into calculations of this risk using the expression</p><span class="mathjax-tex">$$	{{{{{\rm{Risk}}}}}}\; {{{{{\rm{of}}}}}}\; {{{{{\rm{withdrawing}}}}}}\; {{{{{\rm{ERT}}}}}}\; {{{{{\rm{on}}}}}}\; {{{{{\rm{day}}}}}}\, t\\ 	=1-{\int }_{0}^{\infty }{{{{{\rm{Prob}}}}}}\,\left({{{{{\rm{no}}}}}}\; {{{{{\rm{cases}}}}}}\; {{{{{\rm{from}}}}}}\; {{{{{\rm{day}}}}}}\, t \, {{{{{\rm{onwards}}}}}}|R\right)L(R){{{{{\rm{d}}}}}}R,\\ 	=1-{\int }_{0}^{\infty }\exp \left(-R\gamma \left(t\right)\right)L\left(R\right){{{{{\rm{d}}}}}}R,\\ 	=1-{\left(\frac{\beta }{\beta+\gamma \left(t\right)}\right)}^{\alpha }.$$</span>
+                    (5)
+                <p>Here, \(\alpha\) and \(\beta\) are the shape and rate parameters of the likelihood, \(L\left(R\right)\), as given above.</p><h3 class="c-article__sub-heading" id="Sec12">Ethical approval</h3><p>An ethics application was submitted by co-author Dr M Keita to allow continued access to and use of multiple Ebola datasets for research purposes. This application was approved by the ethics committee at the Kinshasa School of Public Health, DRC (approval number ESP/CE/03/2021).</p><h3 class="c-article__sub-heading" id="Sec13">Reporting summary</h3><p>Further information on research design is available in the&#160;<a href="/articles/s41467-024-49888-5#MOESM3">Nature Portfolio Reporting Summary</a> linked to this article.</p></div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd3d3Lm5hdHVyZS5jb20vYXJ0aWNsZXMvczQxNDY3LTAyNC00OTg4OC010gEA?oc=5&hl=en-US&gl=US&ceid=US:en'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON(`https://${window.location.hostname}/data.json`, function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>

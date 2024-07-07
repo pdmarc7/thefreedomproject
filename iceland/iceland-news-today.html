@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Iceland News Today | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="Iceland News Today">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="https://news.google.com/rss/articles/CBMitgFodHRwczovL3d3dy5pY2VsYW5kcmV2aWV3LmNvbS9jYXRlZ29yeS9uZXdzL3BhZ2UvMzE3Lz9fZ2w9MSUyQWh5d2llYiUyQV91cCUyQU1RLi4lMkFfZ2ElMkFOREUwTURVNU9UTXpMakUzTVRJME1qQTBOVEUuJTJBX2dhX0REMUZMNldHM0slMkFNVGN4TWpReU1EUTFNQzR4TGpBdU1UY3hNalF5TURRMU1DNHdMakF1TUEuLtIBAA?oc=5&hl=en-US&gl=US&ceid=US:en">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="">
+	<meta name="twitter:title" content="Iceland News Today">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">Iceland News Today</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!----->
+					<p class="alegreya-sans-regular mt-0 text-secondary"></p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div><p>Friends of Uhunoma Osayomore, a 21-year-old man from Nigeria, delivered a petition signed by over 45,000 to Prime Minister Katr&#237;n Jakobsd&#243;ttir and Minister of Justice &#193;slaug Arna Sigurbj&#246;rnsd&#243;ttir yesterday, asking them to grant international asylum or a humanitarian visa in Iceland. According to a <a href="https://www.ruv.is/frett/2021/02/08/telja-utlendingastofnun-hafa-horft-fram-hja-mansali">R&#218;V report</a>, His lawyer states that when his application was denied, neither the Directorate of Immigration nor The Immigration and Asylum Appeals Board took into consideration the fact that Uhunoma was the victim of human trafficking.&#160;</p>
+<p>&#193;slaug Arna accepted the signatures and stated that while ministers don&#8217;t interfere in individual cases, they&#8217;re always looking for ways to improve the system. She added that Iceland accepted more refugees than the countries around us. Friends of Uhunoma delivered the signatures to the ministers, stating that he hoped they would be well received and that the case might be reopened. When the signatures were delivered, Katr&#237;n stated: &#8220;These are many signatures and we&#8217;ll look into it.&#8221;</p>
+<p>Uhunoma&#8217;s lawyer has stated that the Directorate of Immigration and the appellatory committee had overlooked the fact that he was the victim of human trafficking, both in his home country and on his way to Iceland. They had previously ruled that Uhunoma could not prove that he would be persecuted if he returned to Nigeria.</p>
+<p>Uhunoma&#8217;s story is a tragic one. The petition states that he was 16 when he left his home in Nigeria after his mother was murdered by his father and his younger sister died in an accident. Things went from bad to worse when he was caught by a human trafficker in Lagos, where he witnessed murders, was kept captive in a barn and suffered repeated sexual violence. For three years, he lived in refugee housing in Italy.</p>
+<p>After a year in Iceland, Uhunoma has gained a new life and a loving family and friends. He has a home with an Icelandic family of 6. In the petition, Uhunoma&#8217;s friends state that &#8220;A temporary work permit was applied for Uhunoma, which was rejected, although he has a job waiting as soon as a permit is obtained for him to work in this country. Uhunoma needs no assistance from the Icelandic state and has only one wish: to live a life devoid of fear as a legal citizen of Iceland with his Icelandic family and friends.&#8221;</p>
+<p>The petition for Uhunoma&#8217;s plight was started less than two weeks ago and has reached more than 46,000 signatures at the time of writing. His friends stated that bringing his case to the media wasn&#8217;t an ideal situation but the last resort. In the recent past, such cases have periodically gained media attention and public support. While Minister of Justice &#193;slaug Arna Sigurbj&#246;rnsd&#243;ttir has repeatedly stated that ministers can&#8217;t interfere with individual cases, high-profile cases have sometimes <a href="https://www.icelandreview.com/news/haniye-and-abrahim-granted-asylum/">resulted </a>in institutions <a href="https://www.icelandreview.com/news/senegalese-sisters-and-damon-albarn-to-be-granted-icelandic-citizenship/">reconsidering</a> <a href="https://www.icelandreview.com/news/residence-permit-granted-to-egyptian-family-on-humanitarian-grounds/">earlier decisions.&#160;</a></p>
+<p>The National Power Company Landsvirkjun and Rio Tinto Iceland have reached an agreement on energy prices for the Straumsv&#237;k aluminium smelter, amending the power purchase agreement (PPA) between the two companies dating back to 2010. Rio Tinto Iceland General Manager Rannveig Rist states that the amended contract means the <a href="https://www.icelandreview.com/news/rio-tinto-considers-suspending-production-at-iceland-aluminium-smelter/">smelter&#8217;s closure</a> has been avoided.</p>
+<p>Rio Tinto Iceland filed a complaint to the Competition Authority in July last year, claiming Landsvirkjun was abusing its position in the energy market. They have now decided to withdraw it.&#160;&#160;The company also heralded the closure of the Straumsv&#237;k Aluminium smelter, were Landsvirkjun not to comply, and for the past few months, the smelter has not been running at full capacity.</p>
+<p>&#8220;It&#8217;s a huge step for us to have a deal that makes &#205;SAL a competitive force, avoiding the risk of the factory&#8217;s closure,&#8221; stated Rannveig Rist, General Manager of Rio Tinto Iceland.</p>
+<p>The energy prices are confidential but the nature of the agreement&#8217;s amendment has been disclosed. Instead of a fully fixed-price based agreement, the base power price has been adjusted and remains in USD and linked to the US Consumer Price Index (CPI). It will also be partially linked to global aluminium prices. Landsvirkjun Director H&#246;r&#240;ur Arnarson stated, &#8220;This will make it easier for the aluminium smelter to adjust to fluctuations in the aluminium market.&#8221; As before, the contract specifies the sale of 390 MW or 3.416 GWh a year and expires in 2036.</p>
+<p>Rio Tinto is Landsvirkjun&#8217;s second-largest customer, purchasing around 20% of its energy output. H&#246;r&#240;ur <a href="https://www.ruv.is/frett/2021/02/15/segir-ad-rio-tinto-hafi-ekki-fengid-neinn-covid-afslatt">told R&#218;V</a> that it is likely that the company&#8217;s revenue from the Rio Tinto deal will remain the same. When asked if they were giving the company a covid-19 discount, H&#246;r&#240;ur replied that they weren&#8217;t, although they did last year, a special discount due to the situation in international markets. When asked why the energy prices were confidential, H&#246;r&#240;ur stated that the contract was an old one and included confidentiality clauses and that the companies needed to come to an agreement on when and how they are made public.</p>
+<p>At a Reykjav&#237;k briefing today, Iceland&#8217;s health authorities underlined the importance of treading carefully despite the local success in containing the COVID-19 pandemic. Iceland has not diagnosed a single <a href="https://www.covid.is/data">domestic case</a> outside of quarantine since January 20, except one case on February 1 that turned out to be an old (inactive) infection. Nevertheless, the country&#8217;s Director of Health Alma M&#246;ller reminded the public that it only takes one case to start a new wave.</p>
+<p>Chief Epidemiologist &#222;&#243;r&#243;lfur Gu&#240;nason has submitted recommendations for further tightening border regulations to prevent infections from entering the country. Currently, all travellers arriving to Iceland from abroad are required to undergo testing upon arrival, five to six days of quarantine, and a follow-up test. &#222;&#243;r&#243;lfur has discussed the possibility of also requiring travellers to provide a negative PCR test certificate administered in their country of origin and requiring travellers to quarantine in government facilities for the five-day period.</p>
+<p>Vaccination efforts are going well, according to authorities, who expressed their hope that vaccination could speed up in the second quarter as manufacturers ramp up production.</p>
+<p>The following is a lightly-edited transcription of Iceland Review&#8217;s live-tweeting of the briefing.</p>
+ 
+<p>On the panel: Director of Health Alma M&#246;ller, Chief Epidemiologist &#222;&#243;r&#243;lfur Gu&#240;nason, and Chief Superintendent V&#237;&#240;ir Reynisson.</p>
+<p>Yesterday&#8217;s numbers are in on covid.is. Iceland reported 0 new domestic cases. Total active cases number 26. 8 are in hospital and 5,757 have been fully vaccinated. The briefing has begun. &#222;&#243;r&#243;lfur starts the meeting by mentioning that no one tested positive within the country over the weekend. Fewer tests have been administered in recent days and &#222;&#243;r&#243;lfur encourages the public to get tested if they&#8217;re experiencing any symptoms.</p>
+<p>About 1 percent of passengers arriving in Iceland from abroad are testing positive for the SARS-CoV-2 virus. No one is in hospital with an active case of COVID-19 and only eight that are recovering from infection. &#222;&#243;r&#243;lfur: We&#8217;ve had success with the actions we&#8217;ve taken but we have to remember that it&#8217;s only a week since we last relaxed restrictions. It takes a week or two for the effects of restriction changes to become apparent. Before we start thinking about further relaxing domestic restrictions, we need to think about the border restrictions. I&#8217;ve sent recommendations for new border regulations to the Minister of Health.</p>
+<p>Good news on the vaccine front: increased vaccine production capacity will likely lead to larger &amp; more frequent vaccine shipments to Iceland and we&#8217;re hopeful that we&#8217;ll be getting more vaccine in the near future than currently expected. According to the distribution schedules currently in place, we&#8217;ll receive 70,000 doses before the end of March and that number does not include the AstraZeneca vaccine doses we are expected to receive in March. Danish authorities believe they&#8217;ll be able to vaccinate a large part of the nation this summer and hopefully that will also apply to Iceland.</p>
+<p>Director of Health Alma takes over and preaches caution: it only takes one infection to start a new wave of the virus and early detection is key. She goes over the common symptoms and encourages the public to be on alert and get tested if experiencing any symptoms. We have to keep our guard up. Personal preventative methods have not only helped us contain the COVID-19 pandemic, but they have also led to fewer viral infections across the board. Antibiotics prescriptions dropped significantly last year, says Alma. Alma hopes that individual infection prevention behaviour is here to stay as antibiotic-resistant viruses are a real problem the healthcare system will face in coming years.</p>
+<p>The panel opens for questions. &#8220;What happens if an individual refuses a particular type of vaccine, are they put at the end of the line or do they even get a second offer?&#8221; &#222;&#243;r&#243;lfur doesn&#8217;t know, it hasn&#8217;t come up so far. V&#237;&#240;ir is asked about Ash Wednesday and how people can celebrate the holiday this year (which traditionally involves costumes for children and gatherings). He mentions guidelines for a &#8220;different Ash Wednesday&#8221; that have been published on covid.is</p>
+<p>&#222;&#243;r&#243;lfur will wait and see for this week before submitting his next memorandum for relaxed restrictions. &#222;&#243;r&#243;lfur is asked about predictability in vaccination efforts. He states that vaccine distribution schedules keep changing frequently and he won&#8217;t speculate, only calculate based on the shipments they expect to receive. Asked if twice-weekly information briefings are necessary when there are so few infections, &#222;&#243;r&#243;lfur jokingly replies that the last time they decided to drop the information briefings, infections went up so they&#8217;re not taking any chances.</p>
+<p>Last weekend was the first one since bars were allowed to reopen and things went well. Police kept up strong surveillance but overall it was a success. V&#237;&#240;ir mentions that it&#8217;s been almost a year: everyone should know how the rules work by now and everyone knows how to count.</p>
+<p>&#222;&#243;r&#243;lfur&#8217;s suggestions for updated border restrictions mostly pertain to making some procedures already in place clearer and the possibility of requiring people to stay in quarantine hotels for the five-day period between border tests. The suggestions also pertain requiring a negative PCR test administered before departure to Iceland.</p>
+<p>&#222;&#243;r&#243;lfur is asked if Iceland made a mistake by negotiating vaccine contracts through the EU. &#222;&#243;r&#243;lfur says that this is a question with no clear answer, he thinks Iceland is not in a bad position and will be vaccinated at the same time as the rest of Europe.</p>
+<p>&#8220;What&#8217;s the state of nursing home restrictions now that most residents have received one or both doses of vaccine?&#8221; The Chief Epidemiologist says nursing homes make their own regulations based on authorities&#8217; guidelines. They are still treading carefully.</p>
+<p>&#222;&#243;r&#243;lfur will not speculate how much more vaccine we&#8217;ll receive in coming weeks, it&#8217;s up to the vaccine producers&#8217; capacity. Although it&#8217;s good news that they claim they&#8217;re increasing their capacity, &#222;&#243;r&#243;lfur will only base his plans on distribution schedules in hand. We currently don&#8217;t know how many vaccine doses Iceland will receive after March.</p>
+<p>Will children under 7 be vaccinated? We don&#8217;t know, we&#8217;ll wait for the results of scientific research. Alma states there&#8217;s nothing new to report on the autumn Landakot group infection. Any news of research on long-term effects of COVID-19? Research is ongoing, says Alma.</p>
+<p>V&#237;&#240;ir ends the briefing by reminding people who are experiencing flu-like symptoms to get tested. We have a precious situation that is nonetheless precarious and we have to protect it.</p>
+ 
+<p>Iceland Review will live-tweet authorities&#8217; next COVID-19 briefing, scheduled for Thursday, February 18, 2021 at 11.03am.</p>
+</div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://news.google.com/rss/articles/CBMitgFodHRwczovL3d3dy5pY2VsYW5kcmV2aWV3LmNvbS9jYXRlZ29yeS9uZXdzL3BhZ2UvMzE3Lz9fZ2w9MSUyQWh5d2llYiUyQV91cCUyQU1RLi4lMkFfZ2ElMkFOREUwTURVNU9UTXpMakUzTVRJME1qQTBOVEUuJTJBX2dhX0REMUZMNldHM0slMkFNVGN4TWpReU1EUTFNQzR4TGpBdU1UY3hNalF5TURRMU1DNHdMakF1TUEuLtIBAA?oc=5&hl=en-US&gl=US&ceid=US:en'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON(`https://${window.location.hostname}/data.json`, function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>
