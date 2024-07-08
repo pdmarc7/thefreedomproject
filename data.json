@@ -1,11 +1,97 @@
 [
     {
+        "subreddit": "samoa",
+        "url": "samoa/launching-tautai-mua--boosting-american-samoa's-fisheries.html",
+        "title": "Launching Tautai Mua: Boosting American Samoa's fisheries",
+        "flair_id": "b00b2020-bc41-11eb-ad0c-0e741668136b",
+        "flair_text": "News",
+        "top_image": "https://s3.divcom.com/www.nationalfisherman.com/images/IMG_9956.jpg.medium.800x800.jpg"
+    },
+    {
+        "subreddit": "nicaragua",
+        "url": "nicaragua/nicaragua-gets-closer-to-china-through-lunar-program.html",
+        "title": "Nicaragua Gets Closer to China through Lunar Program",
+        "flair_id": "fcd5e068-bc60-11e8-b2cf-0e1c1aac08ba",
+        "flair_text": "Noticia/News",
+        "top_image": "https://dialogo-americas.com/wp-content/uploads/2024/07/NIC-To-the-Moon-COLLAGE-1024x602.jpg"
+    },
+    {
+        "subreddit": "congo",
+        "url": "congo/dr-congo-soldiers-sentenced-to-death-for-fleeing-from-m23-rebels.html",
+        "title": "DR Congo soldiers sentenced to death for fleeing from M23 rebels",
+        "flair_id": "930ee7ec-2c8b-11ee-80c2-0e0b77df9e7e",
+        "flair_text": "News / Nouvelles",
+        "top_image": "https://ichef.bbci.co.uk/news/1024/branded_news/359f/live/74d3b980-39f8-11ef-bdc5-41d7421c2adf.jpg"
+    },
+
+    {
+        "subreddit": "ireland",
+        "url": "ireland/sinn-féin-dominates-northern-ireland-with-unionists-in-post-brexit-shambles.html",
+        "title": "Sinn Féin dominates Northern Ireland with unionists in post-Brexit shambles",
+        "flair_id": "e390e3ea-f65e-11ed-b11d-76c43c933dc0",
+        "flair_text": "News",
+        "top_image": "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2024/07/05/GettyImages-2159977170-scaled.jpg"
+    },
+
+    {
+        "subreddit": "slovakia",
+        "url": "slovakia/slovakia's-prime-minister-makes-first-public-appearance-since-may-15-shooting.html",
+        "title": "Slovakia's Prime Minister makes first public appearance since May 15 shooting",
+        "flair_id": "5efe825a-756a-11e4-b9ad-12313b0ea068",
+        "flair_text": "\ud83d\udcf0 News \ud83d\udcf0",
+        "top_image": "https://static.euronews.com/articles/stories/08/55/56/30/1200x675_cmsv2_74ad61a0-112e-5dea-ba38-13a930b48858-8555630.jpg"
+    },
+
+    {
+        "subreddit": "tanzania",
+        "url": "tanzania/shadrack-chaula--tanzanian-artist-jailed-for-insulting-president.html",
+        "title": "Shadrack Chaula: Tanzanian artist jailed for insulting president",
+        "flair_id": "7bad7bc2-a56d-11ed-9352-dac798eea896",
+        "flair_text": "News/Media",
+        "top_image": "https://ichef.bbci.co.uk/news/1024/branded_news/7976/live/dd8ff1d0-3ab3-11ef-b2fb-b1658f4bc7c2.jpg"
+    },
+
+    {
+        "subreddit": "srilanka",
+        "url": "srilanka/climate-resilience-in-sri-lanka’s-prisons.html",
+        "title": "Climate resilience in Sri Lanka’s prisons",
+        "flair_id": "f8b46a18-f89e-11eb-ad47-c203a99e4643",
+        "flair_text": "News",
+        "top_image": "https://www.unodc.org/res/frontpage/2024/July/climate-resilience-in-sri-lankas-prisons_html/greenhouse_1500x644px.jpg"
+    },
+    
+    {
+        "subreddit": "sudan",
+        "url": "sudan/egypt\u2019s-new-fm-calls-for-immediate-cessation-of-military-operations-in-sudan.html",
+        "title": "Egypt\u2019s new FM calls for immediate cessation of military operations in Sudan",
+        "flair_id": "106c3a3a-00d3-11e9-8f45-0ed163ef429c",
+        "flair_text": "NEWS/POLITICS",
+        "top_image": "https://www.egypttoday.com/siteimages/larg/20240706120228228.jpg"
+    },
+    
+    {
+        "subreddit": "maldives",
+        "url": "maldives/maldives-shows-the-way-to-a-thriving-'blue-economy'.html",
+        "title": "Maldives shows the way to a thriving 'Blue Economy'",
+        "flair_id": "a93077c4-96bd-11ee-bca7-52d60eada7bf",
+        "flair_text": "News",
+        "top_image": "https://asiatimes.com/wp-content/uploads/2024/07/Maldives-Blue-Economy.jpg"
+    },
+    {
+        "subreddit": "lebanon",
+        "url": "lebanon/nothing-good-would-come-of-an-israeli-war-in-lebanon.html",
+        "title": "Nothing Good Would Come of an Israeli War in Lebanon",
+        "flair_id": "2ed07b0e-f9d3-11e9-abbc-0e79ad156458",
+        "flair_text": "News Articles",
+        "top_image": "https://cdn.theatlantic.com/thumbor/jpYW5tAtNuug0j-fYFUL-M-wB-0=/0x85:3994x2165/1200x625/media/img/mt/2024/07/GettyImages_2159833052/original.jpg"
+    },
+    {
         "subreddit": "israel",
-        "url": "israel/idf-eliminates-hamas-squads-in-gaza,-hostage-release-talks-to-start-after-phase-one-of-deal.html",
-        "title": "IDF eliminates Hamas squads in Gaza, hostage release talks to start after phase one of deal",
+        "url": "israel/hezbollah-rocket-attacks-on-northern-israel-spark-fires,-destroy-thousands-of-acres.html",
+        "title": "Hezbollah rocket attacks on northern Israel spark fires, destroy thousands of acres",
         "flair_id": "d4a94e4a-ec5c-11ee-9b67-da4a8bf616ae",
         "flair_text": "The War - News & Discussion",
-        "top_image": ""
+        "top_image": "https://i.abcnewsfe.com/a/c109f0d6-096b-4fb9-abc5-caff8c224be2/israel-fire-main-gty-jt-240704_1720112320888_hpMain_16x9.jpg?w=1600"
     },
     {
         "subreddit": "philippines",
@@ -15,14 +101,7 @@
         "flair_text": "NewsPH",
         "top_image": "https://gdb.voanews.com/49C61215-6F15-4061-97A3-618726D25397.jpg"
     },
-    {
-        "subreddit": "yemen",
-        "url": "yemen/'christians-are-seen-as-enemies'--houthi-attacks-create-more-suffering-for-yemeni-christians.html",
-        "title": "'Christians Are Seen as Enemies': Houthi Attacks Create More Suffering for Yemeni Christians",
-        "flair_id": "1d482936-0db6-11e4-a2a0-12313b0d3999",
-        "flair_text": ":news: News",
-        "top_image": "https://www2.cbn.com/sites/default/files/media/slider/images/houthis.png"
-    },
+
     {
         "subreddit": "singapore",
         "url": "singapore/singapore-port-ramps-up-container-handling-capacity-amidst-rising-vessel-calls.html",
@@ -30,22 +109,6 @@
         "flair_id": "945fef74-3023-11e4-92f1-12313d14828c",
         "flair_text": "News",
         "top_image": "https://www.marineinsight.com/wp-content/uploads/2024/07/Untitled-design-6.jpg"
-    },
-    {
-        "subreddit": "samoa",
-        "url": "samoa/deliberate-misinformation-on-samoa-agreement-treasonable-\u2013-okupe.html",
-        "title": "Deliberate misinformation on Samoa agreement treasonable \u2013 Okupe",
-        "flair_id": "b00b2020-bc41-11eb-ad0c-0e741668136b",
-        "flair_text": "News",
-        "top_image": "https://cdn.punchng.com/wp-content/uploads/2020/05/12142407/Doyin-Okupe.jpg"
-    },
-    {
-        "subreddit": "nicaragua",
-        "url": "nicaragua/nicaragua\u2019s-anti-democratic-turn-has-geopolitical-implications.html",
-        "title": "Nicaragua\u2019s anti-democratic turn has geopolitical implications",
-        "flair_id": "fcd5e068-bc60-11e8-b2cf-0e1c1aac08ba",
-        "flair_text": "Noticia/News",
-        "top_image": "https://www.aspistrategist.org.au/wp-content/uploads/2024/07/GettyImages-2150034604.jpg"
     },
     {
         "subreddit": "sierraleone",
@@ -73,11 +136,11 @@
     },
     {
         "subreddit": "norway",
-        "url": "norway/norway-dda-receives-side-by-side-for-watering-from-toro-foundation.html",
-        "title": "Norway DDA receives side-by-side for watering from Toro Foundation",
+        "url": "norway/norway-could-become-first-country-to-have-more-electric-cars-than-petrol.html",
+        "title": "Norway could become first country to have more electric cars than petrol",
         "flair_id": "beaa237e-8de1-11ed-b27a-7650783c8d3c",
         "flair_text": "News & current events",
-        "top_image": ""
+        "top_image": "https://media.zenfs.com/en/the_independent_577/53f35992d97aea3e29bcc6ccd1c1ca27"
     },
     {
         "subreddit": "luxembourg",
@@ -87,22 +150,7 @@
         "flair_text": "News",
         "top_image": "https://cdn-res.keymedia.com/cms/images/us/023/0321_638557878461831548.png"
     },
-    {
-        "subreddit": "lebanon",
-        "url": "lebanon/israel-strikes-southern-lebanon-after-hezbollah-rocket-attack.html",
-        "title": "Israel strikes southern Lebanon after Hezbollah rocket attack",
-        "flair_id": "2ed07b0e-f9d3-11e9-abbc-0e79ad156458",
-        "flair_text": "News Articles",
-        "top_image": "https://gdb.voanews.com/08D61DE1-D333-49BA-9492-600973EDDBA5.jpg"
-    },
-    {
-        "subreddit": "congo",
-        "url": "congo/the-war-in-the-democratic-republic-of-the-congo-will-end--the-twenty-seventh-newsletter-(2024).html",
-        "title": "The War in the Democratic Republic of the Congo Will End: The Twenty-Seventh Newsletter (2024)",
-        "flair_id": "930ee7ec-2c8b-11ee-80c2-0e0b77df9e7e",
-        "flair_text": "News / Nouvelles",
-        "top_image": "https://thetricontinental.org/wp-content/uploads/2024/07/Diseno-sin-titulo38.jpg"
-    },
+
     {
         "subreddit": "netherlands",
         "url": "netherlands/netherlands-vs-turkey-live-updates--euro-2024-match-team-news,-predictions-and-line-ups.html",
@@ -111,30 +159,7 @@
         "flair_text": "News",
         "top_image": "https://cdn-media.theathletic.com/qjHBFlmXqRrF_JwskHuq9OIPm_1440x961.jpg"
     },
-    {
-        "subreddit": "libya",
-        "url": "libya/turkish-opposition-defends-journalists-over-death-report-of-intel-member-in-libya.html",
-        "title": "Turkish Opposition Defends Journalists over Death Report of Intel Member in Libya",
-        "flair_id": "c67ca19a-2292-11e8-930e-0e7ea672a8fa",
-        "flair_text": "News ",
-        "top_image": "https://static.srpcdigital.com/styles/1200x600/public/2020/04/30/343feccc71c341dc95c10fbbcb7e4317_18.jpg"
-    },
-    {
-        "subreddit": "jordan",
-        "url": "jordan/france\u2019s-jordan-bardella,-the-immigrant\u2019s-son-who-would-target-migrants.html",
-        "title": "France\u2019s Jordan Bardella, the immigrant\u2019s son who would target migrants",
-        "flair_id": "72d9e5ec-ed32-11e7-a775-0eae0f4944b0",
-        "flair_text": "Political/Economic News - \u0623\u062e\u0628\u0627\u0631 \u0633\u064a\u0627\u0633\u064a\u0629/\u0625\u0642\u062a\u0635\u0627\u062f\u064a\u0629 ",
-        "top_image": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/A56C5FVEXWKWVOQY3Q376VIRAA.jpg&w=1440"
-    },
-    {
-        "subreddit": "monaco",
-        "url": "monaco/summary--monaco-0---1-servette-in-friendly-match-|-july-6,-2024.html",
-        "title": "Summary: Monaco 0 - 1 Servette in Friendly Match | July 6, 2024",
-        "flair_id": "1c04c9ae-6464-11e8-af06-0e5787840e70",
-        "flair_text": "news",
-        "top_image": "https://img.vavel.com/en-1720234687786.jpg"
-    },
+
     {
         "subreddit": "somalia",
         "url": "somalia/houthi-threat-triggers-surge-in-pirate-attacks-off-somalia.html",
@@ -159,14 +184,7 @@
         "flair_text": "\u65b0\u95fb | News",
         "top_image": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2024/07/06/6132e67b-1fef-4ea5-bcc6-6187895d6092_4c56bdf2.jpg?itok=6SxRo7hc&v=1720260832"
     },
-    {
-        "subreddit": "azerbaijan",
-        "url": "azerbaijan/ethnic-cleansing-cannot-be-the-price-for-lasting-armenia.html",
-        "title": "Ethnic cleansing cannot be the price for lasting Armenia",
-        "flair_id": "4d4a8fb8-6c31-11e5-a065-0e49db09c135",
-        "flair_text": "X\u0259b\u0259r | News",
-        "top_image": "https://www.washingtonexaminer.com/wp-content/uploads/2024/07/AP24109549137461-scaled.webp"
-    },
+
     {
         "subreddit": "indonesia",
         "url": "indonesia/indonesia-gets-\u2018wake-up-call\u2019-to-step-up-sustainability-efforts-in-nickel-industry-after-basf-pull-out.html",
@@ -199,22 +217,7 @@
         "flair_text": "News",
         "top_image": "https://gdb.voanews.com/310F3E9A-6962-4813-8771-D89EF6B696C7.jpg"
     },
-    {
-        "subreddit": "ireland",
-        "url": "ireland/south-africa-v-ireland,-live--score-and-latest-updates-from-test-match-in-pretoria.html",
-        "title": "South Africa v Ireland, live: Score and latest updates from Test match in Pretoria",
-        "flair_id": "e390e3ea-f65e-11ed-b11d-76c43c933dc0",
-        "flair_text": "News",
-        "top_image": "https://www.telegraph.co.uk/content/dam/rugby-union/2024/07/06/TELEMMGLPICT000384650404_17202795431980_trans_NvBQzQNjv4BqtLiXk9I2QPXgI4Uxb3W8Ef4Xpit_DMGvdp2n7FDd82k.jpeg?impolicy=logo-overlay"
-    },
-    {
-        "subreddit": "bulgaria",
-        "url": "bulgaria/tennessee-national-guard-band-celebrates-u.s.-independence-day-in-bulgaria.html",
-        "title": "Tennessee National Guard Band Celebrates U.S. Independence Day in Bulgaria",
-        "flair_id": "96d9f49c-01d0-11e4-95f0-12313b0e95bd",
-        "flair_text": "NEWS",
-        "top_image": "https://www.clarksvilleonline.com/wp-content/uploads/2024/07/Tennessee-National-Guard-Band-Celebrates-U.S.-Independence-Day-in-Bulgaria.jpg"
-    },
+
     {
         "subreddit": "zambia",
         "url": "zambia/maarif-foundation-expands-global-reach-with-new-school-in-zambia.html",
@@ -287,14 +290,7 @@
         "flair_text": "News",
         "top_image": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2024/07/05164157/6-768x450.png"
     },
-    {
-        "subreddit": "latvia",
-        "url": "latvia/dwight-ramos-explains-why-gilas-lost-to-brazil,-rates-oqt-in-latvia.html",
-        "title": "Dwight Ramos explains why Gilas lost to Brazil, rates OQT in Latvia",
-        "flair_id": "a896fb82-9565-11eb-8876-0e21790e4469",
-        "flair_text": "Jaunumi/News",
-        "top_image": "https://basketnews.com/image-417696-any1200x1200.jpg"
-    },
+
     {
         "subreddit": "bhutan",
         "url": "bhutan/\u2018the-monk-and-the-gun\u2019-review--from-bhutan,-a-wry-satirical-comedy-about-democracy-and-violence.html",
@@ -311,37 +307,7 @@
         "flair_text": "News",
         "top_image": "https://www.defensenews.com/resizer/mSMucxwu5btNU3f4_0tH6SJ2pIM=/1024x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/archetype/OVGCUNF3UNAR3PHZA7VLDJFHGM.jpg"
     },
-    {
-        "subreddit": "brunei",
-        "url": "brunei-makes-progress-on-sdgs--report.html",
-        "title": "Brunei makes progress on SDGs: Report",
-        "flair_id": "70ce75f4-bf3d-11ee-9090-42341ca0812a",
-        "flair_text": "\ud83d\udcf0 Local Affairs and News"
-    },
-    {
-        "subreddit": "maldives",
-        "url": "maldives/\u2018we-made-the-maldives-from-a-hotel-in-heathrow-airport\u2019--hollywood-location-scouts-reveal-their-secrets.html",
-        "title": "\u2018We made the Maldives from a hotel in Heathrow airport\u2019: Hollywood location scouts reveal their secrets",
-        "flair_id": "a93077c4-96bd-11ee-bca7-52d60eada7bf",
-        "flair_text": "News",
-        "top_image": "https://i.guim.co.uk/img/media/2a79ee79f476f643e3553dbbe6940bf264e09e65/0_361_6000_3600/master/6000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4c20869678fb878184a1c490549cfe06"
-    },
-    {
-        "subreddit": "slovakia",
-        "url": "slovakia/bellingham-gets-one-game-ban-for-hand-gesture-against-slovakia.html",
-        "title": "Bellingham gets one game ban for hand gesture against Slovakia",
-        "flair_id": "5efe825a-756a-11e4-b9ad-12313b0ea068",
-        "flair_text": "\ud83d\udcf0 News \ud83d\udcf0",
-        "top_image": "https://cdn.punchng.com/wp-content/uploads/2024/01/01052518/m.png"
-    },
-    {
-        "subreddit": "germany",
-        "url": "germany/germany-are-out-of-euro-2024-\u2013-and-now-it\u2019s-time-to-wake-up.html",
-        "title": "Germany are out of Euro 2024 \u2013 and now it\u2019s time to wake up",
-        "flair_id": "5d9c97d8-2822-11e5-9f6b-0e5e20c89e15",
-        "flair_text": "News",
-        "top_image": "https://cdn.theathletic.com/app/uploads/2024/07/05224054/Germany-Euro-2024-scaled-e1720233684873.jpg"
-    },
+
     {
         "subreddit": "belgium",
         "url": "belgium/off-the-beaten-track-in-europe--why-belgium\u2019s-limburg-province-is-a-great-place-to-visit.html",
@@ -360,20 +326,13 @@
     },
     {
         "subreddit": "trinidadandtobago",
-        "url": "trinidadandtobago/tobago-escapes-beryl\u2019s-fury;-windwards-picking-up-pieces.html",
-        "title": "Tobago escapes Beryl\u2019s fury; Windwards picking up pieces",
+        "url": "trinidadandtobago/trinidad-now-under-tropical-storm-warning,-tobago-remains-under-hurricane-warning.html",
+        "title": "Trinidad now under Tropical Storm Warning, Tobago remains under Hurricane Warning",
         "flair_id": "c52f07d6-d053-11e9-b795-0e4d10582692",
         "flair_text": "News and Events",
         "top_image": ""
     },
-    {
-        "subreddit": "vietnam",
-        "url": "vietnam/voices-of-valor--vietnam-veteran-uses-experience-to-help-first-responders.html",
-        "title": "VOICES OF VALOR: Vietnam Veteran Uses Experience To Help First Responders",
-        "flair_id": "0925a17e-e38d-11e9-968a-0ef02b5940a0",
-        "flair_text": "News/Tin t\u1ee9c",
-        "top_image": ""
-    },
+
     {
         "subreddit": "haiti",
         "url": "haiti/haiti's-prime-minister-vows-\u2018new-era\u2019-for-gang-plagued-nation.html",
@@ -382,14 +341,7 @@
         "flair_text": "NEWS",
         "top_image": "https://gdb.voanews.com/9BB84AA6-2873-447B-A5F2-11F1647B327D.jpg"
     },
-    {
-        "subreddit": "sudan",
-        "url": "sudan/egypt\u2019s-new-fm-calls-for-immediate-cessation-of-military-operations-in-sudan.html",
-        "title": "Egypt\u2019s new FM calls for immediate cessation of military operations in Sudan",
-        "flair_id": "106c3a3a-00d3-11e9-8f45-0ed163ef429c",
-        "flair_text": "NEWS/POLITICS",
-        "top_image": "https://www.egypttoday.com/siteimages/larg/20240706120228228.jpg"
-    },
+
     {
         "subreddit": "tunisia",
         "url": "tunisia/drought-hit-tunisia-turns-to-russian-companies-to-secure-much-needed-grain-shipments.html",
@@ -430,14 +382,7 @@
         "flair_text": "News",
         "top_image": "https://www.aciafrica.org/images/dimension-2024-03-07t172701_1709851362_1712730590_1715847378_1720249599.webp?w=1200&format=jpeg"
     },
-    {
-        "subreddit": "saudiarabia",
-        "url": "saudiarabia/brazil\u2019s-bolsonaro-indicted-for-alleged-money-laundering-for-undeclared-diamonds-from-saudi-arabia.html",
-        "title": "Brazil\u2019s Bolsonaro indicted for alleged money laundering for undeclared diamonds from Saudi Arabia",
-        "flair_id": "c9bdf194-330a-11e5-881b-0e184320b869",
-        "flair_text": "News | \u0623\u062e\u0628\u0627\u0631",
-        "top_image": "https://dims.apnews.com/dims4/default/f2f13cf/2147483647/strip/true/crop/1541x867+0+567/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F3d%2F07%2Fbe65668bd5438ad90d57bfb01adf%2F453cdd332210416f8ffd44085cd760f2"
-    },
+
     {
         "subreddit": "eritrea",
         "url": "eritrea/eritrea-marks-world-day-to-combat-desertification-and-drought.html",
@@ -470,29 +415,8 @@
         "flair_text": "News",
         "top_image": "https://static.toiimg.com/thumb/msid-111533804,width-1070,height-580,imgsize-108638,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
     },
-    {
-        "subreddit": "cyprus",
-        "url": "",
-        "title": "",
-        "flair_id": "81982020-243f-11eb-a9ee-0e3299aa2ed9",
-        "flair_text": "News"
-    },
-    {
-        "subreddit": "srilanka",
-        "url": "srilanka/victim-of-mass-killing-in-ottawa-had-children,-wife-in-sri-lanka.html",
-        "title": "Victim of mass killing in Ottawa had children, wife in Sri Lanka",
-        "flair_id": "f8b46a18-f89e-11eb-ad47-c203a99e4643",
-        "flair_text": "News",
-        "top_image": "https://s.yimg.com/ny/api/res/1.2/lHkT6Pwj0sRcAT.IwgNdXQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/cbc.ca/c6b1243ceeb608f87009226dbcd7e975"
-    },
-    {
-        "subreddit": "turkey",
-        "url": "turkey/netherlands-vs-turkey-live-updates--euro-2024-latest-team-news,-match-predictions-and-line-ups.html",
-        "title": "Netherlands vs Turkey live updates: Euro 2024 latest team news, match predictions and line-ups",
-        "flair_id": "04b5f494-5a48-11eb-9c3c-0ec2a51f713f",
-        "flair_text": "News",
-        "top_image": "https://cdn-media.theathletic.com/qjHBFlmXqRrF_yOZeD52XtUy0_1440x958.jpg"
-    },
+
+
     {
         "subreddit": "liberia",
         "url": "liberia/liberia-president-launches-new-employee-status-regularization-program;-unveils-new-batch-of-consultants..html",
@@ -501,14 +425,7 @@
         "flair_text": "News",
         "top_image": "https://www.emansion.gov.lr/sites/default/files/styles/media_article_full_page_image/public/images/President%20Boakai%203_4.jpg?h=d2e693e0&itok=fQD0oJgq"
     },
-    {
-        "subreddit": "tanzania",
-        "url": "tanzania/\u201csanctity-does-not-come-by-chance\u201d--catholic-bishop-in-tanzania-urges-youths-to-practice-christian-faith.html",
-        "title": "\u201cSanctity does not come by chance\u201d: Catholic Bishop in Tanzania Urges Youths to Practice Christian Faith",
-        "flair_id": "7bad7bc2-a56d-11ed-9352-dac798eea896",
-        "flair_text": "News/Media",
-        "top_image": "https://www.aciafrica.org/images/dimension-2024-07-06t100214_1720250865.jpg?w=1200&format=jpeg"
-    },
+
     {
         "subreddit": "gambia",
         "url": "gambia/electri\ufb01cation-empowers-rural-communities-in-the-gambia--a-sustainable-transformation.html",
@@ -525,14 +442,7 @@
         "flair_text": "WORLDNEWS (magyarul)",
         "top_image": "https://i.abcnewsfe.com/a/a59115a9-bf1b-49a1-b040-df074977df2a/wirestory_b50b7dc59ab35a415ad1d48ba98805f9_16x9.jpg?w=1600"
     },
-    {
-        "subreddit": "ethiopia",
-        "url": "ethiopia/cardinal-souraphiel--the-church-is-close-to-the-people-suffering-in-ethiopia.html",
-        "title": "Cardinal Souraphiel: the Church is close to the people suffering in Ethiopia",
-        "flair_id": "952536e8-2d25-11eb-b1be-0ed4df17b3a3",
-        "flair_text": "News \ud83d\udcf0",
-        "top_image": "https://www.vaticannews.va/content/dam/vaticannews/multimedia/2024/luglio/03/card.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1500.844.jpeg"
-    },
+
     {
         "subreddit": "brazil",
         "url": "brazil/brazil\u2019s-bolsonaro-indicted-for-alleged-money-laundering-for-undeclared-diamonds-from-saudi-arabia.html",
@@ -541,14 +451,7 @@
         "flair_text": "News",
         "top_image": "https://dims.apnews.com/dims4/default/f2f13cf/2147483647/strip/true/crop/1541x867+0+567/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F3d%2F07%2Fbe65668bd5438ad90d57bfb01adf%2F453cdd332210416f8ffd44085cd760f2"
     },
-    {
-        "subreddit": "georgia",
-        "url": "georgia/new-georgia-laws-regulate-hemp-products,-set-standards-for-rental-property-and-cut-income-taxes.html",
-        "title": "New Georgia laws regulate hemp products, set standards for rental property and cut income taxes",
-        "flair_id": "00046e98-c8ab-11e8-bb9f-0e0ba5035ca6",
-        "flair_text": "News",
-        "top_image": "https://i.abcnewsfe.com/a/1435905c-837d-4aa9-8f23-b7ea928d7257/wirestory_7f0278a2f3a1d5a91feb18c0cc56ca7b_16x9.jpg?w=1600"
-    },
+
     {
         "subreddit": "serbia",
         "url": "serbia/a-powerful-summer-storm-sweeps-through-balkans-with-hail,-rain-and-winds,-killing-2.html",
