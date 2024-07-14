@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Can WebGPU and WebAssembly Overcome Docker’s AI GPU Problem? | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="Can WebGPU and WebAssembly Overcome Docker’s AI GPU Problem?">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://cdn.thenewstack.io/media/2024/07/7b93c78a-mariia-shalabaieva-0sqstxwhgnu-unsplash.jpg">
+	<meta property="og:url" content="https://news.google.com/rss/articles/CBMiUmh0dHBzOi8vdGhlbmV3c3RhY2suaW8vY2FuLXdlYmdwdS1hbmQtd2ViYXNzZW1ibHktb3ZlcmNvbWUtZG9ja2Vycy1haS1ncHUtcHJvYmxlbS_SAQA?oc=5&hl=en-US&gl=US&ceid=US:en">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://cdn.thenewstack.io/media/2024/07/7b93c78a-mariia-shalabaieva-0sqstxwhgnu-unsplash.jpg">
+	<meta name="twitter:title" content="Can WebGPU and WebAssembly Overcome Docker’s AI GPU Problem?">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://cdn.thenewstack.io/media/2024/07/7b93c78a-mariia-shalabaieva-0sqstxwhgnu-unsplash.jpg">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">Can WebGPU and WebAssembly Overcome Docker’s AI GPU Problem?</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By B. Cameron Gain, Steven J. Vaughan-Nichols, David Cassel, Jason Perlow, Usama Jamil, Raghavan "Rags" Srinivas, Jeffrey Burt, Joab Jackson, Manas Chowdhury, Jack Wallen</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">08 July, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://cdn.thenewstack.io/media/2024/07/7b93c78a-mariia-shalabaieva-0sqstxwhgnu-unsplash.jpg" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div>
+ 
+
+<p>PARIS &#8212;&#160; <a href="https://thenewstack.io/webassembly-to-let-developers-combine-languages/" class="local-link">WebAssembly</a> and <a href="https://www.docker.com/?utm_content=inline+mention" class="ext-link" target="_blank" rel="external ">Docker</a> have proven to provide advanced capabilities for the portability of applications and code. In WebAssembly&#8217;s case, the motto holds true in that it&#8217;s designed to allow for deployments once and anywhere. Docker, of course, has famously provided a level of abstraction that was largely responsible for the massive adoption of <a href="https://thenewstack.io/containers/" class="local-link">containerization</a>, and arguably, <a href="https://thenewstack.io/kubernetes/" class="local-link">Kubernetes</a> for its now tried and trusted way to port applications.</p>
+<p>However, in both cases, the use of GPUs has proven to be not exactly a roadblock, but a speed bump for Docker and WebAssembly, experts said at the recent <a href="https://aidevsummit.co/" class="ext-link" rel="external ">AI_dev</a> conference here in June. In Docker&#8217;s case, it has been possible to port its containers as an abstraction on GPUs, but this has involved additional work for adding configurations for different GPUs. This entails extra effort, whereas the idea is to run Docker containers anywhere, especially on any GPU, without additional configurations such as adding drivers, which you would otherwise have to do with directly supported CPUs in Docker.</p>
+<p>In WebAssembly&#8217;s case, often less discussed is how WebAssembly is designed to run on any CPU instruction set. CPUs and GPUs represent different types of instruction sets. For that reason, WebAssembly developers have been looking for a way to overcome the impediment of deploying WebAssembly on GPUs. In both cases, GPUs are central for <a href="https://thenewstack.io/llm/" class="local-link">large language models (LLMs)</a> and AI functionalities and processing. For extending WebAssembly and Docker for AI applications, they are almost exclusively GPU-centric. Improving the abstraction for GPUs has been a subject of interest, especially during the past few months.</p>
+<h2>Enter WebGPU</h2>
+<p>It seems that <a href="https://thenewstack.io/pytorch-docker-and-ai-openness-highlight-ai_dev-europe/" class="local-link">WebGPU</a> offers a way to overcome these GPU shortcomings. With it, WebAssembly modules and Docker containers serving as abstractions can be deployed directly on GPUs without separate configurations for compatibility with different kinds of GPUs, including of course, <a href="https://thenewstack.io/nvidia-wants-more-programming-languages-to-support-cuda/" class="local-link">Nvidia&#8217;s CUDA</a> GPUs for AI applications. Docker is now shipping the preview of WebGPU for Docker Engine, <a href="https://thenewstack.io/create-a-development-environment-in-docker-desktop/" class="local-link">Docker Desktop</a> and other platforms.</p>
+<p>WebGPU has been in use as a&#160;<a href="https://thenewstack.io/dev-news-w3c-accessibility-openai-python-sdk-and-more/" class="local-link">W3C</a> standard for a JavaScript-written API for application compatibility with GPUs, particularly on the Web. For WebAssembly to run AI workloads, WebGPU has served as a hardware accelerator on the Web. Standards such as WASI-NN have offered a compatibility interface to run inference in hardware available for the host, but the newer WebGPU standard has been shown recently to extend its reach to GPUs beyond browser environments.</p>
+<p>As <a href="https://uk.linkedin.com/in/justincormack" class="ext-link" rel="external ">Justin Cormack,</a> CTO and co-founder at Docker, explained during his keynote at the <a href="https://cncf.io/?utm_content=inline+mention" class="ext-link" target="_blank" rel="external ">Cloud Native Computing Foundation</a> AI_dev conference, Docker developers were looking for a portable abstraction, especially for your local development situation for GPUs.</p>
+<p>&#8220;We spent a bit of time looking around about those things, and WebGPU came across as actually something that already exists, is already shipping in most of the browsers across all consumer GPUs and mobile, and it has an ecosystem,&#8221; Cormack said. &#8220;So, we&#8217;re announcing today that we&#8217;re supporting WebGPU in Docker.&#8221;</p>
+<p>During the sidelines of the conference, Cormack explained how WebGPUs are showing a lot of promise. Speaking with me, he described how WebGPU serves as a particularly good fit for Docker containers ported to GPU environments.</p>
+<p>&#8220;It&#8217;s actually fascinating because, in many cases, as long as you can get the hardware offload, there&#8217;s been significant work on abstracting that hardware offload to make it more portable,&#8221; Cormack told me.</p>
+<p>Historically, many applications using GPUs were tightly coupled to Nvidia CUDA. Complex applications, such as scientific computing, were developed for GPUs, Cormack said. In contrast, ML models are much simpler in structure, requiring fast but not necessarily accurate operations, repeated many times.</p>
+<p>&#8220;This means they don&#8217;t necessarily need to be tightly integrated with specific hardware to function properly,&#8221; Cormack said.</p>
+ 
+<p>For WebAssembly, <a href="https://www.linkedin.com/in/myuan/" class="ext-link" rel="external ">Michael Yuan,</a> the maintainer of the <a href="https://thenewstack.io/rust-and-webassembly-serverless-functions-in-vercel/" class="local-link">WasmEdge</a> project and CEO of <a href="https://thenewstack.io/demo-use-webassembly-to-run-llms-on-your-own-device-with-wasmedge/" class="local-link">Second State</a>, described how Docker containers are useful with WebGPU and open source projects like WasmEdge, a CNCF WebAssembly runtime project, and <a href="https://github.com/LlamaEdge/LlamaEdge" class="ext-link" rel="external ">LlamaEdge</a> for AI applications on the edge.</p>
+<p>Yuan described how WebGPU really starts with the browser.</p>
+<p>&#8220;You&#8217;ve already seen many WebAssembly components compiled to run in the browser, taking advantage of WebGPU,&#8221; Yuan said. &#8220;However, our story with Docker is focused on the edge and server-side use cases outside the browser. Some people may ask, &#8216;What do I use Wasm for on server-side AI?&#8217; In fact, it&#8217;s widely used as an embedded runtime for AI models.&#8221;</p>
+<p>The idea is that for applications that need AI services, instead of having the AI model run on a separate server providing an API, the open source AI model can be embedded in your application and packaged together, Yuan said.</p>
+<p>&#8220;This approach is especially useful for edge use cases, development use cases and a variety of other scenarios,&#8221; Yuan said. &#8220;You want to package your large language model with the rest of the application to tightly coupled elements like the prompt and the context window. People are using WebAssembly as a runtime or middleware for the application to interact with the large language model.&#8221;</p>
+ 
+ 
+<p>With LlamaEdge built on WasmEdge, which is also written in <a href="https://thenewstack.io/rust-meets-dart-with-release-of-rust_core-1-0-0/" class="local-link">Rust,</a> and compiled to WebAssembly, it can be directly embedded into a host application. &#8220;This allows the application to access a large language model included in the same package,&#8221; Yuan said.</p>
+<p>The process is targeted at developers and is &#8220;very easy,&#8221; Yuan said during his conference talk &#8220;Efficient and Cross-Platform LLM Inference in the Heterogenous Cloud, which he described as an extension of the keynote with Cormack.</p>
+<p>&#8220;You just write to this API and then compile to Wasm,&#8221; Yuan said. &#8221;Then, you can package the Wasm application with the runtime versions and model versions into a Docker image.&#8221;</p>
+<p>To achieve this, you have a monolithic application with an embedded runtime and an embedded large language model, Yuan said. The embedded runtime allows this whole setup to run on different hardware and on WebGPU inside Docker, as well as on Nvidia hardware when the appropriate sharing is installed on Docker for speech-to-text, Yuan said.</p>
+<p>The model files, including <code>tinyen.config</code> and <code>tinyen.mpk</code>, are bundled into a Docker image. Additionally, a runtime called the Whisper API server, written in Rust and compiled to WebAssembly, is included within the same Docker image. &#8220;That&#8217;s all that is needed in the Docker image,&#8221; Yuan said.</p>
+<p>The resulting Docker image is created as follows:</p>
+ 
+<p>This design ensures that any application, whether it&#8217;s a <a href="https://thenewstack.io/an-introduction-to-python-a-language-for-the-ages/" class="local-link">Python</a> application, a Rust application, or another, can interact with the WebAssembly API included in the Docker image, Yuan said. Running this application provides an OpenAI-compatible speech-to-text API server, allowing the upload of voice documents such as WAV files. Currently, only WAV files are supported as MP3 support has not yet been configured,&#8221; Yuan said.</p>
+<p>&#8220;The OpenAI-compatible API can be used to interact with this server,&#8221; Yuan said. &#8220;The entire Docker image, including all the model files, the LamaEdge runtime, and everything else, is just 90 megabytes.&#8221;</p>
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+</div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://news.google.com/rss/articles/CBMiUmh0dHBzOi8vdGhlbmV3c3RhY2suaW8vY2FuLXdlYmdwdS1hbmQtd2ViYXNzZW1ibHktb3ZlcmNvbWUtZG9ja2Vycy1haS1ncHUtcHJvYmxlbS_SAQA?oc=5&hl=en-US&gl=US&ceid=US:en'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON(`https://${window.location.hostname}/data.json`, function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>

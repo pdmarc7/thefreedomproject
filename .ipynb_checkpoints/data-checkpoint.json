@@ -23,14 +23,16 @@
         "flair_text": "News / Nouvelles",
         "top_image": "https://ichef.bbci.co.uk/news/1024/branded_news/359f/live/74d3b980-39f8-11ef-bdc5-41d7421c2adf.jpg"
     },
+
     {
         "subreddit": "ireland",
-        "url": "ireland/sinn-f\u00e9in-dominates-northern-ireland-with-unionists-in-post-brexit-shambles.html",
-        "title": "Sinn F\u00e9in dominates Northern Ireland with unionists in post-Brexit shambles",
+        "url": "ireland/sinn-féin-dominates-northern-ireland-with-unionists-in-post-brexit-shambles.html",
+        "title": "Sinn Féin dominates Northern Ireland with unionists in post-Brexit shambles",
         "flair_id": "e390e3ea-f65e-11ed-b11d-76c43c933dc0",
         "flair_text": "News",
         "top_image": "https://www.politico.eu/cdn-cgi/image/width=1200,height=630,fit=crop,quality=80,onerror=redirect/wp-content/uploads/2024/07/05/GettyImages-2159977170-scaled.jpg"
     },
+
     {
         "subreddit": "slovakia",
         "url": "slovakia/slovakia's-prime-minister-makes-first-public-appearance-since-may-15-shooting.html",
@@ -39,6 +41,7 @@
         "flair_text": "\ud83d\udcf0 News \ud83d\udcf0",
         "top_image": "https://static.euronews.com/articles/stories/08/55/56/30/1200x675_cmsv2_74ad61a0-112e-5dea-ba38-13a930b48858-8555630.jpg"
     },
+
     {
         "subreddit": "tanzania",
         "url": "tanzania/shadrack-chaula--tanzanian-artist-jailed-for-insulting-president.html",
@@ -47,14 +50,16 @@
         "flair_text": "News/Media",
         "top_image": "https://ichef.bbci.co.uk/news/1024/branded_news/7976/live/dd8ff1d0-3ab3-11ef-b2fb-b1658f4bc7c2.jpg"
     },
+
     {
         "subreddit": "srilanka",
-        "url": "srilanka/climate-resilience-in-sri-lanka\u2019s-prisons.html",
-        "title": "Climate resilience in Sri Lanka\u2019s prisons",
+        "url": "srilanka/climate-resilience-in-sri-lanka’s-prisons.html",
+        "title": "Climate resilience in Sri Lanka’s prisons",
         "flair_id": "f8b46a18-f89e-11eb-ad47-c203a99e4643",
         "flair_text": "News",
         "top_image": "https://www.unodc.org/res/frontpage/2024/July/climate-resilience-in-sri-lankas-prisons_html/greenhouse_1500x644px.jpg"
     },
+    
     {
         "subreddit": "sudan",
         "url": "sudan/egypt\u2019s-new-fm-calls-for-immediate-cessation-of-military-operations-in-sudan.html",
@@ -63,6 +68,7 @@
         "flair_text": "NEWS/POLITICS",
         "top_image": "https://www.egypttoday.com/siteimages/larg/20240706120228228.jpg"
     },
+    
     {
         "subreddit": "maldives",
         "url": "maldives/maldives-shows-the-way-to-a-thriving-'blue-economy'.html",
@@ -95,6 +101,7 @@
         "flair_text": "NewsPH",
         "top_image": "https://gdb.voanews.com/49C61215-6F15-4061-97A3-618726D25397.jpg"
     },
+
     {
         "subreddit": "singapore",
         "url": "singapore/singapore-port-ramps-up-container-handling-capacity-amidst-rising-vessel-calls.html",
@@ -121,11 +128,11 @@
     },
     {
         "subreddit": "canada",
-        "url": "canada/alex-janvier,-pioneer-of-contemporary-indigenous-art-in-canada,-has-died-at-89.html",
-        "title": "Alex Janvier, Pioneer of Contemporary Indigenous Art in Canada, Has Died at 89",
+        "url": "canada/canada-airline-westjet-cancels-more-than-400-flights-after-a-surprise-strike-by-mechanics-union.html",
+        "title": "Canada airline WestJet cancels more than 400 flights after a surprise strike by mechanics union",
         "flair_id": "eb1801e6-11fa-11e8-9baf-0e3363fda33e",
         "flair_text": ":Canada: National News",
-        "top_image": "https://www.artnews.com/wp-content/uploads/2024/07/GettyImages-861945584.jpg?w=1024"
+        "top_image": "https://i.abcnewsfe.com/a/18c497d5-ff8c-4a94-bf9b-2459c83e095d/westjet-rt-jt-240629_1719673454790_hpMain_16x9.jpg?w=1600"
     },
     {
         "subreddit": "norway",
@@ -143,6 +150,7 @@
         "flair_text": "News",
         "top_image": "https://cdn-res.keymedia.com/cms/images/us/023/0321_638557878461831548.png"
     },
+
     {
         "subreddit": "netherlands",
         "url": "netherlands/netherlands-vs-turkey-live-updates--euro-2024-match-team-news,-predictions-and-line-ups.html",
@@ -151,6 +159,7 @@
         "flair_text": "News",
         "top_image": "https://cdn-media.theathletic.com/qjHBFlmXqRrF_JwskHuq9OIPm_1440x961.jpg"
     },
+
     {
         "subreddit": "somalia",
         "url": "somalia/houthi-threat-triggers-surge-in-pirate-attacks-off-somalia.html",
@@ -169,12 +178,13 @@
     },
     {
         "subreddit": "china",
-        "url": "china/china-and-russia-hold-drills-as-japan-and-nato-raise-alarm-over-ukraine.html",
-        "title": "China and Russia hold drills as Japan and Nato raise alarm over Ukraine",
+        "url": "china/can-china-and-russia-put-aside-central-asian-rivalry-for-sco-aims-to-counter-west?.html",
+        "title": "Can China and Russia put aside Central Asian rivalry for SCO aims to counter West?",
         "flair_id": "2130fd98-c090-11e8-9818-0ee704b7e818",
         "flair_text": "\u65b0\u95fb | News",
-        "top_image": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2024/07/13/2b27f6d2-8783-476a-93c3-533106634490_223c3d8d.jpg?itok=RCKSsByL&v=1720855005"
+        "top_image": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2024/07/06/6132e67b-1fef-4ea5-bcc6-6187895d6092_4c56bdf2.jpg?itok=6SxRo7hc&v=1720260832"
     },
+
     {
         "subreddit": "indonesia",
         "url": "indonesia/indonesia-gets-\u2018wake-up-call\u2019-to-step-up-sustainability-efforts-in-nickel-industry-after-basf-pull-out.html",
@@ -207,6 +217,7 @@
         "flair_text": "News",
         "top_image": "https://gdb.voanews.com/310F3E9A-6962-4813-8771-D89EF6B696C7.jpg"
     },
+
     {
         "subreddit": "zambia",
         "url": "zambia/maarif-foundation-expands-global-reach-with-new-school-in-zambia.html",
@@ -279,6 +290,7 @@
         "flair_text": "News",
         "top_image": "https://imgs.mongabay.com/wp-content/uploads/sites/20/2024/07/05164157/6-768x450.png"
     },
+
     {
         "subreddit": "bhutan",
         "url": "bhutan/\u2018the-monk-and-the-gun\u2019-review--from-bhutan,-a-wry-satirical-comedy-about-democracy-and-violence.html",
@@ -295,6 +307,7 @@
         "flair_text": "News",
         "top_image": "https://www.defensenews.com/resizer/mSMucxwu5btNU3f4_0tH6SJ2pIM=/1024x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/archetype/OVGCUNF3UNAR3PHZA7VLDJFHGM.jpg"
     },
+
     {
         "subreddit": "belgium",
         "url": "belgium/off-the-beaten-track-in-europe--why-belgium\u2019s-limburg-province-is-a-great-place-to-visit.html",
@@ -319,6 +332,7 @@
         "flair_text": "News and Events",
         "top_image": "https://loopnewslive.blob.core.windows.net/liveimage/sites/default/files/2024-02/istock_photo_steelpan_065ed5049cfe8215e50aeefe3cb8ef9f.jpg"
     },
+
     {
         "subreddit": "haiti",
         "url": "haiti/haiti's-prime-minister-vows-\u2018new-era\u2019-for-gang-plagued-nation.html",
@@ -327,6 +341,7 @@
         "flair_text": "NEWS",
         "top_image": "https://gdb.voanews.com/9BB84AA6-2873-447B-A5F2-11F1647B327D.jpg"
     },
+
     {
         "subreddit": "tunisia",
         "url": "tunisia/drought-hit-tunisia-turns-to-russian-companies-to-secure-much-needed-grain-shipments.html",
@@ -367,6 +382,7 @@
         "flair_text": "News",
         "top_image": "https://www.aciafrica.org/images/dimension-2024-03-07t172701_1709851362_1712730590_1715847378_1720249599.webp?w=1200&format=jpeg"
     },
+
     {
         "subreddit": "eritrea",
         "url": "eritrea/eritrea-marks-world-day-to-combat-desertification-and-drought.html",
@@ -399,6 +415,8 @@
         "flair_text": "News",
         "top_image": "https://static.toiimg.com/thumb/msid-111533804,width-1070,height-580,imgsize-108638,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
     },
+
+
     {
         "subreddit": "liberia",
         "url": "liberia/liberia-president-launches-new-employee-status-regularization-program;-unveils-new-batch-of-consultants..html",
@@ -407,6 +425,7 @@
         "flair_text": "News",
         "top_image": "https://www.emansion.gov.lr/sites/default/files/styles/media_article_full_page_image/public/images/President%20Boakai%203_4.jpg?h=d2e693e0&itok=fQD0oJgq"
     },
+
     {
         "subreddit": "gambia",
         "url": "gambia/electri\ufb01cation-empowers-rural-communities-in-the-gambia--a-sustainable-transformation.html",
@@ -423,6 +442,7 @@
         "flair_text": "WORLDNEWS (magyarul)",
         "top_image": "https://i.abcnewsfe.com/a/a59115a9-bf1b-49a1-b040-df074977df2a/wirestory_b50b7dc59ab35a415ad1d48ba98805f9_16x9.jpg?w=1600"
     },
+
     {
         "subreddit": "brazil",
         "url": "brazil/brazil\u2019s-bolsonaro-indicted-for-alleged-money-laundering-for-undeclared-diamonds-from-saudi-arabia.html",
@@ -431,6 +451,7 @@
         "flair_text": "News",
         "top_image": "https://dims.apnews.com/dims4/default/f2f13cf/2147483647/strip/true/crop/1541x867+0+567/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F3d%2F07%2Fbe65668bd5438ad90d57bfb01adf%2F453cdd332210416f8ffd44085cd760f2"
     },
+
     {
         "subreddit": "serbia",
         "url": "serbia/a-powerful-summer-storm-sweeps-through-balkans-with-hail,-rain-and-winds,-killing-2.html",
@@ -446,149 +467,5 @@
         "flair_id": "c2eb297a-a17f-11e5-afad-0e6d402a538f",
         "flair_text": "News",
         "top_image": "https://cdn.grove.wgbh.org/dims4/default/3b9d960/2147483647/strip/true/crop/5472x2873+0+766/resize/1200x630!/quality/90/?url=https%3A%2F%2Fk1-prod-gbh.s3.us-east-2.amazonaws.com%2Fbrightspot%2F74%2Fa2%2F89e3a576472b95660b20ceb1789f%2Fgettyimages-1236299218.jpg"
-    },
-    {
-        "subreddit": "opensource",
-        "title": "SAP's bid to woo open source community meets muted response",
-        "top_image": "https://regmedia.co.uk/2015/01/15/shutterstock_110459960.jpg",
-        "url": "opensource/sap's-bid-to-woo-open-source-community-meets-muted-response.html"
-    },
-    {
-        "subreddit": "marxism",
-        "title": "OPINION: Self-help and the illusion of individual agency",
-        "top_image": "https://snworksceo.imgix.net/ids/8b249128-fbd9-4bb1-8850-bce9ad62b4dd.sized-1000x1000.png?w=800&h=600",
-        "url": "marxism/opinion--self-help-and-the-illusion-of-individual-agency.html"
-    },
-    {
-        "subreddit": "covid",
-        "title": "It\u2019s not your imagination, more people are getting COVID again",
-        "top_image": "https://bdc2020.o0bc.com/wp-content/uploads/2024/07/https___nytapi.wieck_.com_feed-photos_kzTz5KX4-66915adf05513-768x432.jpg",
-        "url": "covid/it\u2019s-not-your-imagination,-more-people-are-getting-covid-again.html"
-    },
-    {
-        "subreddit": "palestine",
-        "title": "Despite UN appeal, US and UK don\u2019t fund \u2018critical lifeline\u2019 to Palestinians",
-        "top_image": "https://www.aljazeera.com/wp-content/uploads/2024/07/AFP__20240528__34TY2BZ__v2__HighRes__PalestinianIsraelConflict-1720860522.jpg?resize=1920%2C1440",
-        "url": "palestine/despite-un-appeal,-us-and-uk-don\u2019t-fund-\u2018critical-lifeline\u2019-to-palestinians.html"
-    },
-    {
-        "subreddit": "privacy",
-        "title": "Transcript: Senate Hearing on Protecting Americans\u2019 Privacy and the AI Accelerant",
-        "top_image": "https://cdn.sanity.io/images/3tzzh18d/production/85330066f4e68274ba92b05c2028ed24813b96b7-1920x1080.png",
-        "url": "privacy/transcript--senate-hearing-on-protecting-americans\u2019-privacy-and-the-ai-accelerant.html"
-    },
-    {
-        "subreddit": "dogs",
-        "title": "Man facing animal cruelty charges in connection to 3 dead dogs found in abandoned van in Mattapan",
-        "top_image": "https://cmg-cmg-tv-10020-prod.cdn.arcpublishing.com/resizer/EODovgK2H6-jvgf490oFY6M0dk8=/1440x810/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/cmg/O3UIPAD2QNDM7IINROTTRZE7OU.png",
-        "url": "dogs/man-facing-animal-cruelty-charges-in-connection-to-3-dead-dogs-found-in-abandoned-van-in-mattapan.html"
-    },
-    {
-        "subreddit": "stocks",
-        "title": "Dow Jones Today: Stocks Close Higher to Finish Week With Gains; Dow Above 40K",
-        "top_image": "https://www.investopedia.com/thmb/TNTsdR0xPn0lQae59esdG8FGZQw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MarketBlogImage-final-6ac06c7b9250446a8e86c566b11e02e1.png",
-        "url": "stocks/dow-jones-today--stocks-close-higher-to-finish-week-with-gains;-dow-above-40k.html"
-    },
-    {
-        "subreddit": "feminism",
-        "title": "Katy Perry 'Woman's World': Is The Feminism in the Room With Us Right Now?",
-        "top_image": "https://media.themusic.com.au/images/standard/news-24/2407-katy-perry-womens-world.990x660.jpg",
-        "url": "feminism/katy-perry-'woman's-world'--is-the-feminism-in-the-room-with-us-right-now?.html"
-    },
-    {
-        "subreddit": "hamburg",
-        "title": "Hamburg\u2019s wartime bunker is reinvented as an unlikely green oasis",
-        "top_image": "https://i.guim.co.uk/img/media/78cd06426d4762330cab63d8c65dafa18c3fff1c/0_121_3554_2132/master/3554.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b8131b1e4c3b118df417c67a49002de4",
-        "url": "hamburg/hamburg\u2019s-wartime-bunker-is-reinvented-as-an-unlikely-green-oasis.html"
-    },
-    {
-        "subreddit": "literature",
-        "title": "'Hope always has a place in literature': Premee Mohamed on writing post-apocalyptic fiction",
-        "top_image": "https://i.cbc.ca/1.7258670.1720555655!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/we-speak-through-the-mountain-by-premee-mohamed.jpg",
-        "url": "literature/'hope-always-has-a-place-in-literature'--premee-mohamed-on-writing-post-apocalyptic-fiction.html"
-    },
-    {
-        "subreddit": "nvidia",
-        "title": "Will the selloff in Nvidia, chip stocks extend? By Investing.com",
-        "top_image": "https://i-invdn-com.investing.com/news/moved_LYNXNPEK330I8_L.jpg",
-        "url": "nvidia/will-the-selloff-in-nvidia,-chip-stocks-extend?-by-investing.com.html"
-    },
-    {
-        "subreddit": "cybersecurity",
-        "title": "AT&T cybersecurity breach potentially posed 'risk to national security'",
-        "top_image": "https://ewscripps.brightspotcdn.com/dims4/default/b4153ca/2147483647/strip/true/crop/1920x1008+0+36/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fca%2F5e%2F79ff54a44e99935825f5d07ec1fc%2Fresize-image-template-1920x1080-38.png",
-        "url": "cybersecurity/at&t-cybersecurity-breach-potentially-posed-'risk-to-national-security'.html"
-    },
-    {
-        "subreddit": "sweden",
-        "title": "World record breaking surfer reveals Sweden\u2019s \u201cworld-class\u201d waves!",
-        "top_image": "https://beachgrit.com/wp-content/uploads/2024/07/151129_FREDDIE-MEADOWS__61A4396-som-smart-objekt-1.jpg-copy.jpg",
-        "url": "sweden/world-record-breaking-surfer-reveals-sweden\u2019s-\u201cworld-class\u201d-waves!.html"
-    },
-    {
-        "subreddit": "bicycling",
-        "title": "New effort underway to make local roads safer for bicyclists",
-        "top_image": "https://www.simivalleyacorn.com/wp-content/uploads/images/2024-07-13/3p1.jpg",
-        "url": "bicycling/new-effort-underway-to-make-local-roads-safer-for-bicyclists.html"
-    },
-    {
-        "subreddit": "docker",
-        "title": "Can WebGPU and WebAssembly Overcome Docker\u2019s AI GPU Problem?",
-        "top_image": "https://s.yimg.com/ny/api/res/1.2/W4unYYl._vGwIBvbQvbVbQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTgxMDtoPTQ1MA--/https://media.zenfs.com/en-CA/homerun/article.442.com/dc032713a4afddb1d112c41021b3fab2",
-        "url": "docker/can-webgpu-and-webassembly-overcome-docker\u2019s-ai-gpu-problem?.html"
-    },
-    {
-        "subreddit": "productivity",
-        "title": "Are employers getting too involved in their workers' lives?",
-        "top_image": "https://arizent.brightspotcdn.com/dims4/default/9e6c577/2147483647/strip/true/crop/5864x3079+0+412/resize/1200x630!/quality/90/?url=https%3A%2F%2Fsource-media-brightspot.s3.us-east-1.amazonaws.com%2Fef%2F9e%2F2899db26413ea535fee2290c18d4%2Fadobestock-624680168.jpeg",
-        "url": "productivity/are-employers-getting-too-involved-in-their-workers'-lives?.html"
-    },
-    {
-        "subreddit": "chicago",
-        "title": "New 34-Story Hotel Tower Unveiled For Bally\u2019s Permanent Chicago Casino Site",
-        "top_image": "https://i0.wp.com/bcc-newspack.s3.amazonaws.com/uploads/2024/07/C2-scaled.jpg?fit=2560%2C1754&ssl=1",
-        "url": "chicago/new-34-story-hotel-tower-unveiled-for-bally\u2019s-permanent-chicago-casino-site.html"
-    },
-    {
-        "subreddit": "germany",
-        "title": "Japan, Germany agree to boost security cooperation in Indo-Pacific",
-        "top_image": "https://img.kyodonews.net/english/public/images/posts/c9aa63b80ef4c9c64cb9623256e06979/cropped_image_l.jpg",
-        "url": "germany/japan,-germany-agree-to-boost-security-cooperation-in-indo-pacific.html"
-    },
-    {
-        "subreddit": "nintendo",
-        "title": "Basketball on Nintendo Switch Sports is lovely mean-spirited fun",
-        "top_image": "https://assetsio.gnwcdn.com/Basketball-Nintendo-Switch-Sports.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
-        "url": "nintendo/basketball-on-nintendo-switch-sports-is-lovely-mean-spirited-fun.html"
-    },
-    {
-        "subreddit": "philosophy",
-        "title": "Everyday Philosophy: Can you ever be \u201ctoo emotional\u201d in decision-making?",
-        "top_image": "https://bigthink.com/wp-content/uploads/2024/07/EP-How-should-we-look-on-anger-in-tough-scenarios.jpg?resize=1200,630",
-        "url": "philosophy/everyday-philosophy--can-you-ever-be-\u201ctoo-emotional\u201d-in-decision-making?.html"
-    },
-    {
-        "subreddit": "buddhism",
-        "title": "Young South Koreans are increasingly drawn to Buddhism via social media-savvy influencers",
-        "top_image": "https://media.zenfs.com/en/cp.org/badd2ce71d0b176d1bc05eefdbb34211",
-        "url": "buddhism/young-south-koreans-are-increasingly-drawn-to-buddhism-via-social-media-savvy-influencers.html"
-    },
-    {
-        "subreddit": "environment",
-        "title": "ECHO study sheds light on how neighborhood environment influenced child's well-being amid pandemic",
-        "top_image": "https://d2jx2rerrg6sh3.cloudfront.net/image-handler/picture/2016/3/Children_playing_sunset_-_Zurijeta_8c5bdac77e44431bb1bfec67b9c87208-620x480.jpg",
-        "url": "environment/echo-study-sheds-light-on-how-neighborhood-environment-influenced-child's-well-being-amid-pandemic.html"
-    },
-    {
-        "subreddit": "biodiversity",
-        "title": "History shows that humans are good for biodiversity\u2026 sometimes",
-        "top_image": "https://scx2.b-cdn.net/gfx/news/hires/2024/history-shows-that-hum.jpg",
-        "url": "biodiversity/history-shows-that-humans-are-good-for-biodiversity\u2026-sometimes.html"
-    },
-    {
-        "subreddit": "anime",
-        "title": "The Rick and Morty Anime Announced for This August Looks Trippy as Hell",
-        "top_image": "https://cdn-p.smehost.net/sites/2ed48fdcc3904f548299cd86d78e9885/wp-content/uploads/2024/07/rickmortyanime.png",
-        "url": "anime/the-rick-and-morty-anime-announced-for-this-august-looks-trippy-as-hell.html"
     }
 ]

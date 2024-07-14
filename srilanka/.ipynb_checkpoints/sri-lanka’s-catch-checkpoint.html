@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sri Lanka’s Catch | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="Sri Lanka’s Catch">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://www.earthisland.org/images/uploads/sriLankaHero.jpg">
+	<meta property="og:url" content="https://news.google.com/rss/articles/CBMiUWh0dHBzOi8vd3d3LmVhcnRoaXNsYW5kLm9yZy9qb3VybmFsL2luZGV4LnBocC9tYWdhemluZS9lbnRyeS9zcmktbGFua2FzLWNhdGNoLTIyL9IBAA?oc=5&hl=en-US&gl=US&ceid=US:en">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://www.earthisland.org/images/uploads/sriLankaHero.jpg">
+	<meta name="twitter:title" content="Sri Lanka’s Catch">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://www.earthisland.org/images/uploads/sriLankaHero.jpg">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">Sri Lanka’s Catch</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Kang-Chun Cheng</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary"></p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://www.earthisland.org/images/uploads/sriLankaHero.jpg" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div>
+        <p class="dropcaps">ON A RECENT morning in Medirigiriya, Sri Lanka, the streets were filled with the fragrance of curry buns and string hopper noodles as uniformed schoolchildren, commuters on bicycles, and shopkeepers started their day. It&#8217;s an idyllic scene in this city of 100,000, which is located in the country&#8217;s north-central Polonnaruwa district. But here, as in many places in rural Sri Lanka, the quiet belies a troubling mystery: high rates of chronic kidney disease. </p>
+
+<p>Not far to the north of town, along the banks of the Galamuna river, endless rows of palm trees line long stretches of rice paddies that are ubiquitous throughout the farming village of Ambagaswewa. Here, I met EG Sunanda Lanka, 49, who for the past decade has taught Sinhala and Buddhism at a local public school. Lanka supports his family of four by growing rice on the side, and he has also been working as a volunteer community partner since 2018, on behalf of a research team from Duke University and the University of Ruhuna in southern Sri Lanka, testing the urine of students for cadmium, fluoride, and other potentially dangerous metals that might be linked to kidney disease.</p>
+
+<p class="pullquote pullquote-left">with the attention of research institutions and public campaigns&#8230; people are slowly learning about the silent killer.</p>
+
+ 
+
+<p>&#8220;This issue has been going on for more than 15 to 20 years,&#8221; Lanka tells me from his cozy living room, sitting with his wife and 13-year-old son over tea and local sweets. &#8220;Many people die in this area.&#8221; Now, with the attention of research institutions and public campaigns &#8212; which include free screenings for the disease in hotspot regions &#8212; people are slowly learning about the silent killer. </p>
+
+<p>Chronic interstitial nephritis, better known as chronic kidney disease, is reaching epidemic proportions across Sri Lanka&#8217;s rural farming and fishing regions. The exact cause for this upsurge in the disease &#8212; which is especially prevalent among farmers and can cause anemia, heart disease, and stroke, among a range of other problems &#8212; has baffled scientists. Probable factors include high levels of hard minerals in water, increased heat stress, and the overuse of agrochemicals, many containing arsenic. Potentially adding to the problem, a prolonged economic crisis since 2019 has further limited access to food and medicine in remote places.</p>
+      
+    
+        <p>In hotspot areas, the rate of disease can be almost 23 percent, and nearly everyone can point to someone they know suffering from acute kidney failure, a consequence of untreated chronic kidney disease. But because the cause is unclear, definitive solutions have remained elusive. </p>
+
+<p>Lanka himself started having trouble with his kidneys recently. After experiencing recurring pain in his stomach and sides, in September 2023, he went to a public hospital, where he received an MRI scan that showed several large stones in his right kidney. Stones tend to rapidly deteriorate kidney health &#8211;&#8211; left untreated, the condition can advance to chronic kidney disease. The doctor told him to drink more water, Lanka recalls.</p>
+
+<p>That advice highlights one of the conundrums of the epidemic. Dehydration can be one cause of kidney problems. But so too can contaminated water. </p>
+
+<p class="dropcaps">SHYAMALI WEERASEKARA, head of the environmental studies division and principal scientist at the National Aquatic Resources Research and Development Agency (NARA), wrote her doctoral thesis on the potential causes of chronic kidney disease. She says there are upwards of 40 hypotheses on the source of the diseases, including genetic makeup, mycotoxins, native medications, and even snakebite. </p>
+
+<p>But so far that&#8217;s all they are, hypotheses, despite significant research into risk factors, which are, at the moment, presumed to be both occupational and environmental. In 2009, for example, the World Health Organization and Sri Lanka&#8217;s Ministry of Health collaborated to find the causes of kidney diseases across the nation, but they came up empty. A 2014 literature review by the International Water Management Institute attempted to summarize probable environmental factors, identifying high concentrations of hard metals and elements in &#8220;hotspot areas,&#8221; including Medirigiriya, where the climate is dry and most people rely on groundwater. More research was needed, the authors said, in identifying clear patterns of the disease, along with its links to ancient irrigation systems, groundwater, well use, and ways in which contaminated water might infiltrate the food chain.</p>
+
+<p class="pullquote pullquote-right">When you&#8217;re hot and dehydrated, it&#8217;s already damaging the kidney. Then you&#8217;re taking in contaminants that further the issues.</p>
+
+<p>Weerasekara&#8217;s own research, which explores the mineral theory, has found significant differences in fluoride levels in water across the geological areas from household to household. &#8220;It&#8217;s almost like gambling, drawing the lottery,&#8221; she says. Some households simply draw higher levels of fluoride in the water than others. </p>
+
+<p>Other minerals, too, could be playing a role. For instance, in Kalpitiya, a fishing town on the northwestern coast where the disease is spiking, water tests show high levels of nitrate, calcium, and sulfate. But whether that is the cause of the spike is unclear and hard to prove.</p>
+
+<p>Among the most prevalent theories is one that suggests that the epidemic is tied to heavy agrochemical use. It&#8217;s a theory Nishad Jayasundara, a professor of global environmental health at Duke, is researching. Jayasundara grew up in a village called Hapugala, in Sri Lanka&#8217;s southern Galle district, in the 1980s. Around then, his father, a farmer, switched crops, trading out the ma-vee traditional red rice variety for a government-provided hybrid. This was part of Sri Lanka&#8217;s wider participation in the &#8220;Green Revolution,&#8221; during which the government decided that increasing agricultural output was the best way to reach economic equity. </p>
+      
+    
+        <p>Two-thousand-year-old agricultural practices, like the use of ash to reduce the spread of pests, or the planting of neem trees, whose roots have strong anti-pest qualities, around rice paddies, were replaced with new farming methods, including the use of hybrid plant varieties and chemical fertilizers, to maximize yields. But those same practices came at a cost, putting more chemicals into the land and water. </p>
+
+<p>Today, changing weather patterns have influenced how these chemicals interact with the environment. Rising temperatures mean more evaporation. This leads to higher concentrations of chemicals and metals associated with a variety of illnesses, including chronic kidney disease, according to Jayasundara. &#8220;All of that ends up burdening the kidney. When you&#8217;re hot and dehydrated, it&#8217;s already damaging the kidney. Then you&#8217;re taking in contaminants that further the issues. It all leads back to heat stress.&#8221;</p>
+
+<p>Concentrations may also be rising through continued chemical use. PG Ajith has worked at Ruhunu Gowi Piyasa, a small farm supply store in the southern city of Matara, for 15 years. He supplies farmers in the Nilwala River basin, which is filled with vast tracts of rice paddies, but he suspects some of them don&#8217;t use the recommended amount.</p>
+
+<p>&#8220;I might advise farmers to apply 8 kilograms of fertilizer to an acre, but they come back and say they used 12 to 15 kilograms per acre,&#8221; he tells me. &#8220;There&#8217;s not much you can do when that happens.&#8221; He believes that farmers&#8217; kidney diseases in part come from not following such recommendations. Researchers have noted a correlation between pesticide use and kidney disease in farmers, but other factors seem to play a role as well. </p>
+
+<p>The chemicals farmers apply flow downstream and into other communities. Along Sri Lanka&#8217;s northwestern coast, for example, traditional fishing towns contend with chemical runoff from excess fertilizer use inland. There, drinking water faces another threat. While, due to the lack of localized data, it&#8217;s unclear exactly how much sea levels are rising along the northwestern coast, residents have reported that seawater has been seeping into crucial water supplies, mainly rivers and wells. The extra salt brings high levels of calcium and magnesium, Jayasundara says, increasing water hardness. This spoils once-clean sources of drinking water, forcing people to use alternative sources, which may be contaminated with agrochemicals. </p>
+
+<p>Meanwhile, heat is compounding all of these potential risk factors. Sri Lanka is a hot country, with temperatures hovering in the low 80s nearly year-round. And it&#8217;s getting hotter. By 2050, an estimated 19 million of the nation&#8217;s 22 million people may live in moderate or severe hotspots, according to climate models. </p>
+
+<p>Research has linked higher ambient temperatures from climate change to rising rates of kidney diseases. &#8220;Sri Lanka has made the perfect case for how climate change is affecting people in real time,&#8221; Jayasundara says. &#8220;The kidney is highly susceptible to environmental influences. Heat stress is one that directly affects and induces kidney damage. Even before climate change, people in hot, dry, dehydrating conditions clearly showed that kidney damage happens.&#8221; </p>
+
+<p>&#8220;When the environment warms, people need more water to drink,&#8221; adds Akila Harishchandra, a PhD candidate in marine sciences at the University of Maine. &#8220;But drinking bad water is highly stressful on kidneys. You can quench your thirst, but the kidney has to work harder to purify the water.&#8221; It&#8217;s a catch-22, he says: If one doesn&#8217;t drink enough water, that also takes a toll on the body. </p>
+
+<p class="pullquote pullquote-left">&#8220;When the environment warms, people need more water to drink. But drinking bad water is highly stressful on kidneys.&#8221;</p>
+
+<p>Some populations are at higher risk. Research by the American Public Health Association shows that those working in physically taxing jobs, such as fishing and farming, for example, are particularly vulnerable to rising temperatures. When it comes to those in the fishing sector &#8212; about 10 percent of the population in Sri Lanka &#8211;&#8211; &#8220;they tend to work for a long time without drinking adequate water,&#8221; says KPGL Sandaruwan, a marine economics researcher with NARA. &#8220;Long-term, low levels of water consumption causes kidney failure.&#8221; </p>
+
+<p class="dropcaps">AS CONCERN ABOUT kidney disease has grown over the last few decades, so has concern for potential causes, and demand for solutions. All of which led to a major policy change a few years ago that quickly backfired. </p>
+
+<p>Amid growing scrutiny of agrochemical usage, in April 2021, the administration of then-president Gotabaya Rajapaksa passed a near-overnight ban on all chemical fertilizer and pesticide imports. The agricultural nation was shocked. Farmers had no way to quickly procure organic fertilizers or pesticides to replace the chemicals they&#8217;d come to rely on. Harvests across the island plummeted. It was a catastrophic attempt to address what has become a clear health crisis. </p>
+
+<p>&#8220;The ban was not well thought out,&#8221; Jayasundara says. Sri Lanka is an agricultural country, and researchers estimate the livelihoods of nearly 80 percent of people &#8211;&#8211; including those involved in rice farming and working on tea estates &#8212; suffered to some extent. By November 2021, the pesticide ban was rescinded due to nationwide protests and riots. But the damage had already been done. Rice production in the six months following the ban dropped by at least 35 percent; $450 million was spent on rice imports for a country previously exporting the same crop.</p>
+
+<p>Farmers can once again use agrochemicals. But Sri Lanka is still facing a health crisis, and now the economic crisis has caused shortages in medicines and basic supplies, burdening an already overloaded healthcare system. Queues to see the right doctor can be long, stretching for months. </p>
+
+<p>Under such economic conditions, clean water isn&#8217;t always a priority. &#8220;People would rather buy food or pay for their kids&#8217; education than clean drinking water,&#8221; says Santhalingam Thanusanth, another NARA fisheries biologist. &#8220;Families are already regularly skipping meals. And since this doesn&#8217;t have a very sudden effect, some may not figure it out until years later. They may never even link their health issues to drinking water.&#8221;</p>
+      
+    </div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://news.google.com/rss/articles/CBMiUWh0dHBzOi8vd3d3LmVhcnRoaXNsYW5kLm9yZy9qb3VybmFsL2luZGV4LnBocC9tYWdhemluZS9lbnRyeS9zcmktbGFua2FzLWNhdGNoLTIyL9IBAA?oc=5&hl=en-US&gl=US&ceid=US:en'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON(`https://${window.location.hostname}/data.json`, function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>
