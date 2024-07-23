@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Open Artificial Knowledge (OAK) Dataset: A Large-Scale Resource for AI Research Derived from Wikipedia’s Main Categories | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="Open Artificial Knowledge (OAK) Dataset: A Large-Scale Resource for AI Research Derived from Wikipedia’s Main Categories">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://www.marktechpost.com/wp-content/uploads/2024/07/Screenshot-2024-07-22-at-3.32.57-PM.png">
+	<meta property="og:url" content="https://www.marktechpost.com/2024/07/22/open-artificial-knowledge-oak-dataset-a-large-scale-resource-for-ai-research-derived-from-wikipedias-main-categories/">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://www.marktechpost.com/wp-content/uploads/2024/07/Screenshot-2024-07-22-at-3.32.57-PM.png">
+	<meta name="twitter:title" content="Open Artificial Knowledge (OAK) Dataset: A Large-Scale Resource for AI Research Derived from Wikipedia’s Main Categories">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://www.marktechpost.com/wp-content/uploads/2024/07/Screenshot-2024-07-22-at-3.32.57-PM.png">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">Open Artificial Knowledge (OAK) Dataset: A Large-Scale Resource for AI Research Derived from Wikipedia’s Main Categories</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Mohammad Asjad, www.facebook.com</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">22 July, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://www.marktechpost.com/wp-content/uploads/2024/07/Screenshot-2024-07-22-at-3.32.57-PM.png" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div>
+             
+<p>The rapid advancement of Artificial Intelligence (AI) and Machine Learning (ML) has highlighted the critical need for large, diverse, and high-quality datasets to train and evaluate foundation models. However, acquiring such datasets presents significant challenges, including data scarcity, privacy concerns, and high data collection and annotation costs. Artificial (synthetic) data has emerged as a promising solution to these challenges, offering a way to generate data that mimics real-world patterns and characteristics. The importance of artificial data in AI research has grown substantially due to several factors: scalability, privacy preservation, diversity and representation, and cost-effectiveness. Synthetic data can be generated at scale, address privacy issues, cover a wide range of scenarios to mitigate biases, and provide a more economical alternative to collecting and annotating real-world data.</p>
+
+
+
+<p>Recent work in training state-of-the-art language models (LLMs) has increasingly incorporated synthetic datasets, as seen in models like Llama-3. While handcrafted human data has shown significant improvements in supervised fine-tuning (SFT), especially for tasks like code generation and mathematical reasoning, the scarcity and cost of such data have led to increased use of synthetic data. This method utilizes capable LLMs, like the GPT family, to produce high-quality synthetic data. Recent research has highlighted LLMs&#8217; ability to rephrase and boost synthetic data for effective SFT, suggesting continued growth in synthetic data use for improving LLM performance and alignment.</p> 
+
+
+
+
+
+<p>Artificial data generation has several key challenges. These include ensuring diversity and generalization, maintaining quality, preserving privacy, addressing bias, and adhering to ethical and legal considerations. Diversity in artificial data is crucial for model generalization, while quality directly impacts the performance of models trained on it. Privacy concerns must be addressed to prevent revealing sensitive information. Bias in artificial data can arise from underlying algorithms and training data, potentially leading to unfair or inaccurate model predictions. Ethical and legal considerations involve adhering to guidelines and regulations such as GDPR and CCPA. Also, practical challenges include scalability, cost-effectiveness, developing robust evaluation metrics, ensuring factual accuracy, and maintaining and updating synthetic data to reflect current trends and linguistic changes.</p>
+
+
+
+<p>Vadim Borisov and Richard H. Schreiber introduce <strong>The Open Artificial Knowledge (OAK) dataset</strong> that addresses the challenges of artificial data generation by providing a large-scale resource of over 500 million tokens. OAK utilizes an ensemble of state-of-the-art LLMs, including GPT4o, LLaMa3-70B, LLaMa3-8B, Mixtral-8x7B, Gemma-7B, and Gemma-2-9B, to generate high-quality text across diverse domains. The data generation pipeline begins by querying knowledge databases to gather topics, which are then expanded using LLMs. These topics are transformed into prompts used to generate texts with advanced models. The OAK dataset is continuously evaluated and updated to ensure its effectiveness and reliability for training advanced language models. By systematically addressing each challenge, OAK provides a robust resource for developing more accurate and aligned language models.</p> 
+
+
+
+
+ 
+
+
+<p>The OAK dataset generation follows a structured approach designed to address key challenges in artificial data creation. The process involves four main steps: subject extraction, subtopic expansion, prompt generation, and text generation with open-source LLMs. This approach tackles challenges such as diversity and generalization, quality, bias, and factual accuracy. The dataset also addresses privacy concerns by using only publicly available data and open-source models.&#160;</p>
+
+
+
+<p>To ensure ethical and legal compliance, the OAK team implements a comprehensive strategy, including code publication for transparency and a commitment to content removal upon request. Toxicity and harmful content are mitigated through automated filtering techniques and fine-tuned models. The dataset&#8217;s effectiveness is evaluated using common benchmarks, and regular updates are planned to maintain relevance.</p>
+
+
+
+<p>The OAK dataset has two main techniques for prompt generation: programming prompt engineering and meta prompt engineering. These methods ensure diversity in prompts while maintaining quality and addressing potential biases. The resulting dataset provides a robust resource for developing more accurate and aligned language models, with its use intended primarily for research purposes in areas such as model alignment, bias mitigation, and prompt engineering.</p>
+
+
+
+<p>OAK dataset offers a comprehensive resource for AI research, derived from Wikipedia&#8217;s main categories. Utilizing advanced models like GPT4o, LLaMa3, Mixtral, Gemma, and Gemma2, OAK addresses data scarcity, privacy concerns, and diversity issues. With over 500 million tokens, this freely available dataset supports model alignment, fine-tuning, and benchmarking across various AI tasks and applications. OAK&#8217;s creation process involves sophisticated techniques to ensure quality, diversity, and ethical considerations, making it a valuable resource for advancing AI technologies while addressing critical challenges in the field of artificial data generation and utilization.</p>
+
+
+
+ 
+
+
+
+<p>Check out the <strong><a href="https://arxiv.org/abs/2407.14371" target="_blank" rel="noreferrer noopener">Paper</a></strong>. All credit for this research goes to the researchers of this project. Also,&#160;don&#8217;t forget to follow us on&#160;<strong><a href="https://twitter.com/Marktechpost">Twitter</a></strong> and join our&#160;<strong><a href="https://pxl.to/at72b5j" target="_blank" rel="noreferrer noopener">Telegram Channel</a></strong> and&#160;<a href="https://www.linkedin.com/groups/13668564/"><strong>LinkedIn Gr</strong></a><a href="https://www.linkedin.com/groups/13668564/" target="_blank" rel="noreferrer noopener"><strong>oup</strong></a>. <strong>If you like our work, you will love our</strong><a href="https://marktechpost-newsletter.beehiiv.com/subscribe" target="_blank" rel="noreferrer noopener"><strong>&#160;newsletter..</strong></a></p>
+
+
+
+<p>Don&#8217;t Forget to join our&#160;<strong><a href="https://www.reddit.com/r/machinelearningnews/" target="_blank" rel="noreferrer noopener">46k+ ML SubReddit</a></strong></p>
+
+
+
+ 
+
+ 
+ 
+
+   
+         
+
+
+        </div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://www.marktechpost.com/2024/07/22/open-artificial-knowledge-oak-dataset-a-large-scale-resource-for-ai-research-derived-from-wikipedias-main-categories/'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON("https://raw.githubusercontent.com/pdmarc7/thefreedomproject/main/data.json", function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NX FPGA family enables Hardware Security in Programmable FPGAs | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="NX FPGA family enables Hardware Security in Programmable FPGAs">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://www.cnx-software.com/wp-content/uploads/2024/07/Lattice-MachXO5D-NX-FPGA-dev-board.jpg">
+	<meta property="og:url" content="https://www.cnx-software.com/2024/07/23/lattice-machxo5d-nx-fpga-family-enables-hardware-security-in-programmable-fpgas/">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://www.cnx-software.com/wp-content/uploads/2024/07/Lattice-MachXO5D-NX-FPGA-dev-board.jpg">
+	<meta name="twitter:title" content="NX FPGA family enables Hardware Security in Programmable FPGAs">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://www.cnx-software.com/wp-content/uploads/2024/07/Lattice-MachXO5D-NX-FPGA-dev-board.jpg">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">NX FPGA family enables Hardware Security in Programmable FPGAs</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Debashis Das</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">23 July, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://www.cnx-software.com/wp-content/uploads/2024/07/Lattice-MachXO5D-NX-FPGA-dev-board.jpg" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div>
+		<p>Lattice Semiconductor has recently introduced the <strong>MachXO5D-NX FPGA family,</strong> which integrates a hardware root of trust (RoT) into low-power FPGAs. This addresses security challenges by combining on-chip Flash memory and hardware encryption to minimize code capture risks during load time.</p>
+<p>The MachXO5D-NX family includes three variants with logic cell counts of 27k (FMXO5-25), 53k (LFMXO5-55T), and 96k (LFMXO5-100T). These FPGAs feature built-in hardware encryption, a cryptographic engine supporting AES-256, ECDSA-384/521, SHA2-256/384/512, and RSA 3072/4096, and a unique secret identity (USID) for device identity protection. Built on a 28-nm fully-depleted silicon-on-insulator (FD-SOI) process, these FPGAs reduce power consumption by 75% and lower soft error rates by 100x(as the company mentions). They support interfaces such as MIPI D-PHY (CSI-2, DSI), LVDS, Gigabit Ethernet, and PCIe, making them suitable for secure edge applications.</p>
+ 
+<p>Lattice MachXO5D-NX FPGA family specifications</p>
+<ul>
+<li>FPGA &#8211; Lattice Semi MachXO5D-NX FPGA family (27k (FMXO5-25), 53k (LFMXO5-55T), and 96k (LFMXO5-100T))</li>
+<li>Programmable Logic &#8211; 27k to 96k logic cells, 20 to 156 multipliers</li>
+<li>Memory &#8211; 1.9 Mbot to 7.3 Mbit embedded memory, DDR3/DDR3L/LPDDR4 support</li>
+<li>Interfaces &#8211; MIPI D-PHY, LVDS, SLVS, SGMII, PCIe Gen1/2, Ethernet</li>
+<li>I/O &#8211; 200-300 programmable I/O, high-performance (1.8V) and wide-range (3.3V)</li>
+<li>Analog Features&#160; Dual ADC (1 MSPS, 12-bit SAR), three continuous-time comparators</li>
+<li>Security Features &#8211; Bitstream encryption (AES-256), authentication (ECDSA), secure boot</li>
+<li>Additional Features &#8211; Clock Data Recovery (CDR), sysDSP blocks with Dynamic Shift for AI/ML, sysMEM EBR, soft error mitigation, dual ADC, dual DAC</li>
+<li>Power Management &#8211; Low-power and high-performance modes</li>
+<li>Dimensions &#8211; 17 x 17mm</li>
+</ul>
+ 
+<p>Please note that this is a summarized overview of the MachXO5-NX FPGA family&#8217;s capabilities, for more information you can check out the <a href="https://www.latticesemi.com/view_document?document_id=54310" rel="nofollow">MachXO5-NX Family datasheet</a> on Lattice Semiconductor&#8217;s website.</p>
+<p>MachXO5-NX FPGAs enable edge AI and math-intensive applications with multipliers and DSP cells. The FPGA also comes with MIPI, LVDS, Ethernet, PCIe, and DDR interfaces. Embedded Flash memory supports multi-boot and user storage. Additionally, the chips are compatible with the Lattice Radiant design suite and utilize pre-engineered IP modules.</p>
+<p>This FPGA also features a hardware-based cryptographic engine with advanced encryption standards(AES), a true random number generator, and a unique secret identity for enhanced security. The devices are crypto-agile, which means they can switch between multiple cryptographic algorithms or methodologies. Additionally, they support Commercial National Security Algorithms (CNSA) specified for bitstream and cryptographic algorithms like AES-256 and SHA2-512. By integrating security features into hardware, no FPGA fabric needs to be dedicated to security, ensuring efficient utilization of resources.</p>
+<p>The MachXO5-NX includes an FD-SOI&#8217;s layered architecture that reduces leakage current resulting in 75% lower power consumption and a 100x reduction in soft errors. Meaning it can be used in electrically noisy and radiation-prone environments.</p>
+<p>Another problem this chip solves is the code capture risk, a code capture is done after Glitching a chip. Glitching is a process where you power the chip with an electrical pulse or voltage fluctuation that causes the chip to temporarily malfunction, which allows the hacker to bypass the security and configuration flags and then malicious code can be executed or code can be copied from the memory.</p>
+ 
+<p>The company also offers the MachXO5-NX development board built around the MachXO5-NX-25 FPGA and with a range of features for secure control and system management. It provides flexible I/O options including SGMII, and ADC, and to make it more interesting it is compatible with various expansion headers like Arduino, Raspberry Pi, and FX12. Additionally, it supports multiple configuration modes (JTAG, I2C/I3C, SPI), onboard programming via USB, and includes components like HyperRAM, LEDs, switches, and buttons for demonstration and prototyping purposes. The board is designed to make the development process simpler.</p>
+<p>I was not able to find any purchasing link for the FPGA IC itself, but I found a <a href="https://www.digikey.com/en/products/detail/lattice-semiconductor-corporation/LFMXO5-25-EVN/16570536" rel="nofollow">Digikey listing</a> where the development board can be purchased for $199. More information about the chip can be found on the company <a href="https://www.latticesemi.com/Products/FPGAandCPLD/MachXO5-NX">product page</a> or the <a href="https://www.latticesemi.com/about/newsroom/pressreleases/2024/lattice-introduces-new-secure-control-fpga-family">press release</a>.</p>
+ 
+  			 
+		 
+		</div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://www.cnx-software.com/2024/07/23/lattice-machxo5d-nx-fpga-family-enables-hardware-security-in-programmable-fpgas/'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON("https://raw.githubusercontent.com/pdmarc7/thefreedomproject/main/data.json", function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>
