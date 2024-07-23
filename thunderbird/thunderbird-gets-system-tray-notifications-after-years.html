@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thunderbird gets system tray notifications after 24 years | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="Thunderbird gets system tray notifications after 24 years">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://regmedia.co.uk/2024/07/22/thunderbird_shutterstock.jpg">
+	<meta property="og:url" content="https://www.theregister.com/2024/07/22/mozilla_thunderbird_ffix">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://regmedia.co.uk/2024/07/22/thunderbird_shutterstock.jpg">
+	<meta name="twitter:title" content="Thunderbird gets system tray notifications after 24 years">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://regmedia.co.uk/2024/07/22/thunderbird_shutterstock.jpg">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">Thunderbird gets system tray notifications after 24 years</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Thomas Claburn</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">22 July, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://regmedia.co.uk/2024/07/22/thunderbird_shutterstock.jpg" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div>
+<p>Mozilla's Thunderbird team has fixed a 24-year-old feature bug, bringing system tray mail notifications to GNOME and KDE desktop environments for Linux users.</p>
+<p>The missing interface capability, reported back on Friday, November 12, 1999, <a target="_blank" rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=18732">was closed</a> on Monday, July 22. Those using Thunderbird with applicable Linux desktops should henceforth see an appropriate <a target="_blank" rel="nofollow" href="https://linuxiac.com/how-to-enable-system-tray-icons-in-gnome/">system tray</a> notification upon receipt of new mail.
+<br></p>
+<p>Some effort was made in 2004 to come up with <a target="_blank" rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=18732#c12">an XPI component</a> that provided the same notification functionality available in the Windows version of Thunderbird but that didn't work out.</p>
+
+     
+
+<p>By 2006, there was a <a target="_blank" rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=18732#c29">complaint</a> wondering why it has been so difficult to implement a mail notification icon in system tray for Unix-like desktop environments. That grousing was answered, "Welcome to Mozilla's bugzilla! Don't worry, you will get used to it. And patience is a virtue ;)"</p>
+
+         
+
+
+         
+
+<p>Indeed, another 18 years of patience would be required.</p>
+<p>The fix was developed by Mozilla Thunderbird software engineers Heather Ellsworth and Ikey Doherty. Doherty in <a target="_blank" rel="nofollow" href="https://hg.mozilla.org/comm-central/rev/9f64153706e8">patch details</a> said that the system tray icon proved difficult to support for x86 (32-bit) builds, and thus at the moment requires a 64-bit build of Thunderbird.</p>
+
+         
+
+<p>There was <a target="_blank" rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=18732#c59">some effort made</a> to have the fix done in time for the debut of <a target="_blank" href="https://www.theregister.com/2024/07/18/thunderbird_128_nebula/">Thunderbird 128 ESR</a> last week, but the deadline wasn't met.</p>
+<p>Alec Flett, who initially <a target="_blank" rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=18732#a2786_1833">assigned</a> the bug while working as a <a target="_blank" rel="nofollow" href="http://www.mozillazine.org/chat/logs/1999-11-10-MAILNEWS.html">developer working on Netscape's mail client</a>, told The Register, "I'm initially a little surprised that folks are actually fixing this but maybe this is just the fun side of open source &#8211; when people have an itch to scratch, it eventually gets scratched! I suspect there are dozens of bugs like this though."</p>
+<ul class="listinks">
+
+<li><a href="https://www.theregister.com/2024/07/03/linux_mint_22_beta/">Linux Mint 22 beta sprinkles Cinnamon desktop on Ubuntu</a></li>
+
+<li><a href="https://www.theregister.com/2024/04/04/germanys_northernmost_state_ditches_windows/">German state ditches Windows, Microsoft Office for Linux and LibreOffice</a></li>
+
+<li><a href="https://www.theregister.com/2024/04/03/clickjacking_heir_gesture_jacking/">Meet clickjacking's slicker cousin, 'gesture jacking,' aka 'cross window forgery'</a></li>
+
+<li><a href="https://www.theregister.com/2023/08/10/gnome_45_beta/">GNOME 45 beta: Less buggy, more colorful, and still not your grandma's desktop</a></li>
+</ul>
+<p>The Thunderbird bug is older even than another <a target="_blank" rel="nofollow" href="https://bugzilla.mozilla.org/show_bug.cgi?id=33654">24-year-old bug</a>, fixed <a target="_blank" href="https://www.theregister.com/2024/07/11/firefox_128_new_esr/">in Firefox 128</a> earlier this month, that dates back to March 28, 2000.</p>
+<p>Neither of these bug reports represent known security vulnerabilities so the delay in addressing them isn't particularly consequential. Other feature bugs, or feature requests, like support for OpenPGP email in Thunderbird, have also taken <a target="_blank" href="https://www.theregister.com/2020/09/18/mozilla_kills_send_thunderbird_pgp/">decades</a> to implement.</p>
+<p>But security issues can also take years to deal with, as happened with a Firefox browsing history leak that languished for a decade before being <a target="_blank" href="https://www.theregister.com/2010/04/05/firefox_browsing_history_fix/">fixed</a> in 2010.</p>
+
+         
+
+<p>Mozilla's cache of aged bugs and missing capabilities may be embarrassingly evident due to the public nature of its Bugzilla reporting system, but other vendors maintain similar stores of vintage flaws and missing capabilities.</p>
+<p>Microsoft, for example, last year <a target="_blank" href="https://www.theregister.com/2023/04/11/microsoft_defender_firefox_fix/">addressed a Defender bug</a> that had been interfering with Firefox for half a decade. The Windows biz still, so far as we can tell, hasn't dealt with a Microsoft Forms feature request <a target="_blank" href="https://www.theregister.com/2023/12/13/microsoft_forms_feature_request_delay/">from 2016</a>.</p>
+<p>Far more consequential was a <a target="_blank" rel="nofollow" href="https://www.bbc.com/news/technology-30019976">19-year-old critical security flaw</a> that Microsoft addressed in 2014. There was also the PrintDemon bug that was introduced in 1996 and <a target="_blank" rel="nofollow" href="https://windows-internals.com/printdemon-cve-2020-1048/">fixed</a> in 2020.</p>
+                                  
+                    
+
+
+
+                            </div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://www.theregister.com/2024/07/22/mozilla_thunderbird_ffix'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON("https://raw.githubusercontent.com/pdmarc7/thefreedomproject/main/data.json", function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>
