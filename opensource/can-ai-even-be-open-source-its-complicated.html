@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Can AI even be open source? It's complicated | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="Can AI even be open source? It's complicated">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://www.zdnet.com/a/img/resize/5d49afa1bea3c1ce3c94659464409a92e163be49/2024/08/05/4ef182f0-0f6a-4fc0-b2ec-54ef74f62d76/gettyimages-1796542178.jpg?auto=webp&fit=crop&height=675&width=1200">
+	<meta property="og:url" content="https://www.zdnet.com/article/can-ai-even-be-open-source-its-complicated/">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://www.zdnet.com/a/img/resize/5d49afa1bea3c1ce3c94659464409a92e163be49/2024/08/05/4ef182f0-0f6a-4fc0-b2ec-54ef74f62d76/gettyimages-1796542178.jpg?auto=webp&fit=crop&height=675&width=1200">
+	<meta name="twitter:title" content="Can AI even be open source? It's complicated">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://www.zdnet.com/a/img/resize/5d49afa1bea3c1ce3c94659464409a92e163be49/2024/08/05/4ef182f0-0f6a-4fc0-b2ec-54ef74f62d76/gettyimages-1796542178.jpg?auto=webp&fit=crop&height=675&width=1200">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">Can AI even be open source? It's complicated</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Steven Vaughan-Nichols</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">05 August, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://www.zdnet.com/a/img/resize/5d49afa1bea3c1ce3c94659464409a92e163be49/2024/08/05/4ef182f0-0f6a-4fc0-b2ec-54ef74f62d76/gettyimages-1796542178.jpg?auto=webp&fit=crop&height=675&width=1200" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div><p>Without <a href="https://www.zdnet.com/article/why-open-source-is-the-cradle-of-artificial-intelligence/" rel="follow">open source, there is no artificial intelligence (AI)</a>. Period. End of statement.&#160;</p><p>It's not just that AI's early roots spring from the 1960s' open language Lisp; the headline <a href="https://www.zdnet.com/article/what-is-generative-ai-and-why-is-it-so-popular-heres-everything-you-need-to-know/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.zdnet.com/article/what-is-generative-ai-and-why-is-it-so-popular-heres-everything-you-need-to-know/%22,%22target%22:%22%22,%22absolute%22:%22%22,%22linkText%22:%22AI%20generative%20models%22%7D" rel="follow">AI generative models</a>, such as <a href="https://www.zdnet.com/article/what-is-chatgpt-and-why-does-it-matter-heres-everything-you-need-to-know/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.zdnet.com/article/what-is-chatgpt-and-why-does-it-matter-heres-everything-you-need-to-know/%22,%22target%22:%22%22,%22absolute%22:%22%22,%22linkText%22:%22ChatGPT%22%7D" rel="follow">ChatGPT</a>, <a href="https://www.zdnet.com/article/meta-releases-big-new-open-source-ai-large-language-model/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.zdnet.com/article/meta-releases-big-new-open-source-ai-large-language-model/%22,%22target%22:%22%22,%22absolute%22:%22%22,%22linkText%22:%22Llama%202%22%7D" rel="follow">Llama 2</a>, and <a href="https://www.zdnet.com/article/how-to-use-dall-e-2-to-turn-your-creative-visions-into-ai-generated-art/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.zdnet.com/article/how-to-use-dall-e-2-to-turn-your-creative-visions-into-ai-generated-art/%22,%22target%22:%22%22,%22absolute%22:%22%22,%22linkText%22:%22DALL-E%22%7D" rel="follow">DALL-E</a>, are built on solid, open-source foundations. However, those models and programs themselves are not open source.</p><p><strong>Also: <a href="https://www.zdnet.com/article/ai-scientist-we-need-to-think-outside-the-large-language-model-box/" rel="follow">AI scientist: 'We need to think outside the large language model box'</a></strong></p><p>Oh, I know that when <a href="https://www.threads.net/@zuck/post/C9xPBHGv_3V?xmt=AQGz-FKhRij-rb2z0hsBemjBaxF4TFIgNgwhfeQstipRBg" target="_blank" rel="noopener nofollow" class="c-regularLink">Meta CEO Mark Zuckerberg unveiled Llama&#160; 3.1</a> in a Threads post, he said, "Open-source AI is the path forward," and that Meta is "taking the next steps towards open-source AI becoming the industry standard."</p><p>At a SIGGRAPH keynote discussion with Nvidea CEO Jensen Huang, Zuckerberg admitted:&#160;</p><blockquote><p><a href="https://www.youtube.com/watch?v=w-cmMcMZoZ4#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.youtube.com/watch?v=w-cmMcMZoZ4%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22We're%20not%20pursuing%20this%20out%20of%20altruism%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">We're not pursuing [open source] out of altruism</a>, though I believe it will benefit the ecosystem. We're doing it because we think it will enhance our offerings by creating a strong ecosystem. &#8230; this might sound selfish, but after building this company for a while, one of my goals for the next 10 or 15 years is to ensure we can build the fundamental technology for our social experiences.</p></blockquote><p>Zuckerberg is sincere about open source. As we've seen repeatedly, open source is the way to unite technologies. For example, we use a unified Linux now instead of multiple, incompatible versions of Unix because Linus <a href="https://www.zdnet.com/article/linus-torvaldss-love-hate-relationship-with-the-gpl/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.zdnet.com/article/linus-torvaldss-love-hate-relationship-with-the-gpl/%22,%22target%22:%22%22,%22absolute%22:%22%22,%22linkText%22:%22Torvalds%20open-sourced%20Linux%20under%20GPLv2%22%7D" rel="follow">Torvalds open-sourced Linux under GPLv2</a>.&#160;</p><p><strong>Also:&#160;</strong><a href="https://www.zdnet.com/article/a-new-white-house-report-embraces-open-source-ai/" rel="follow"><strong>A new White House report embraces open-source AI</strong></a></p><p>But I've also read <a href="https://github.com/meta-llama/llama/blob/main/LICENSE#link=%7B%22role%22:%22standard%22,%22href%22:%22https://github.com/meta-llama/llama/blob/main/LICENSE%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22Meta's%20LLaMA%202%20license%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">Meta's Llama 2 license</a> and the <a href="https://ai.meta.com/llama/use-policy/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://ai.meta.com/llama/use-policy/%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22LLaMA%20Acceptable%20Use%20Policy%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">Llama Acceptable Use Policy</a>. It's not open source. It's not even close.&#160;</p><p>Zuck's not alone, though, in playing fast and loose with open source. From the name, you'd think <a href="https://openai.com/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://openai.com/%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22OpenAI%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">OpenAI</a> is open source. It was indeed open back when GPT-1 and GPT-2 were state-of-the-art. That was a long time -- and billions in revenue -- ago. Starting with GPL-3, OpenAI closed its doors.&#160;</p><p>As Mark Dingemanse, a language scientist at Radboud University in Nijmegen, Netherlands said in a Nature article, "Some big firms are reaping the benefits of <a href="https://www.nature.com/articles/d41586-024-02012-5#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.nature.com/articles/d41586-024-02012-5%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22claiming%20to%20have%20open-source%20models%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">claiming to have open-source models</a> while trying "to get away with disclosing as little as possible."</p><p>Indeed, Dingemanse and his colleague Andreas Liesenfeld found only one AI chatbot that could truly be described as open: The Hugging Face-hosted Large-Language Model (LLM) <a href="https://huggingface.co/bigscience/bloomz#link=%7B%22role%22:%22standard%22,%22href%22:%22https://huggingface.co/bigscience/bloomz%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22BigScience/BloomZ%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">BigScience/BloomZ</a>.</p><p>Other LLMs that qualify are <a href="https://falconllm.tii.ae/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://falconllm.tii.ae/%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22Falcon%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">Falcon</a>, <a href="https://huggingface.co/lmsys/fastchat-t5-3b-v1.0#link=%7B%22role%22:%22standard%22,%22href%22:%22https://huggingface.co/lmsys/fastchat-t5-3b-v1.0%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22FastChat-T5%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">FastChat-T5</a>, and <a href="https://github.com/openlm-research/open_llama#link=%7B%22role%22:%22standard%22,%22href%22:%22https://github.com/openlm-research/open_llama%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22OpenLLaMA%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">OpenLLaMA</a>. But most LLMs contain proprietary, copyrighted, or simply unknown information their owners won't tell you about. As the Electronic Frontier Foundation (EFF) observed, <a href="https://www.eff.org/deeplinks/2023/01/open-data-and-ai-black-box#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.eff.org/deeplinks/2023/01/open-data-and-ai-black-box%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22%5C%22Garbage%20In,%20Gospel%20Out.%5C%22%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">"Garbage In, Gospel Out."</a>&#160;</p><p>Now, much of the innovative software driving AI is open source. TensorFlow is a versatile learning framework that supports multiple programming languages and is used for <a href="https://www.zdnet.com/article/what-is-machine-learning-everything-you-need-to-know/" rel="follow">machine learning</a>. PyTorch is popular for its dynamic computational graphs and ease of use in <a href="https://www.zdnet.com/article/what-is-deep-learning-everything-you-need-to-know/" rel="follow">deep learning</a> applications that quickly come to mind.&#160;</p><p><strong>Also: <a href="https://www.zdnet.com/article/how-open-source-attracts-some-of-the-worlds-top-innovators/" rel="follow">How open source attracts some of the world's top innovators</a></strong></p><p>The LLMs and programs built on them are another story. All the most popular AI chatbots and programs are proprietary.&#160;</p><p>So, why are companies claiming their projects are open source?&#160; By "<a href="https://www.nytimes.com/2024/05/17/business/what-is-openwashing-ai.html#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.nytimes.com/2024/05/17/business/what-is-openwashing-ai.html%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22open-washing%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">open-washing</a>" their efforts, businesses hope to gild their programs with open source's positive connotations of transparency, collaboration, and innovation. They also hope to con developers into helping advance their own projects. It's all about marketing.&#160;</p><p>Clearly, we need to devise an open-source definition that fits AI programs to stop these faux-source efforts in their tracks. Unfortunately, that's easier said than done.&#160;</p><p>While people constantly fuss over the finer details of what's open-source code and what isn't, the Open Source Initiative (OSI) has nailed down the definition, the <a href="https://opensource.org/osd#link=%7B%22role%22:%22standard%22,%22href%22:%22https://opensource.org/osd%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22Open%20Source%20Definition%20(OSD)%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">Open Source Definition (OSD)</a>, for almost twenty years. The convergence of open source and AI is much more complicated.&#160;</p><p>In fact, Joseph Jacks, founder of the Venture Capitalist (VC) business FOSS Capital, argued there is "<a href="https://x.com/josephjacks_/status/1661599035952889856#link=%7B%22role%22:%22standard%22,%22href%22:%22https://x.com/josephjacks_/status/1661599035952889856%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22no%20such%20thing%20as%20open-source%20AI%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">no such thing as open-source AI</a>" since "open source was invented explicitly for software source code."</p><p>It's true. In addition, open-source's legal foundation is copyright law. As Jacks observed, "<a href="https://deeplizard.com/lesson/ddd2drizla#link=%7B%22role%22:%22standard%22,%22href%22:%22https://deeplizard.com/lesson/ddd2drizla%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22Neural%20Net%20Weights%20(NNWs)%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">Neural Net Weights (NNWs)</a> [which are essential in AI] are not software source code -- they are unreadable by humans, nor are they debuggable."</p><p>As Stefano Maffulli, OSI executive director, has told me, software and data are mixed in AI, and existing open-source licenses are breaking down. Specifically, trouble emerges when all that data and code are merged in AI/ML artifacts -- such as datasets, models, and weights. "Therefore, we need to make a new definition for open-source AI," said Mafulli.&#160;</p><p><strong>Also: </strong><a href="https://www.zdnet.com/article/switzerland-now-requires-all-government-software-to-be-open-source/" rel="follow"><strong>Switzerland's federal government requires releasing its software as open source</strong></a></p><p>However, getting there hasn't been easy. The main point of contention is the extent of openness required, particularly regarding training data. While some argue that releasing pre-trained models without the training data is sufficient, others argue that true open-source AI should also include access to the training data.</p><p>As julia ferraioli <strong>(Stet: she spells her name in all lower case)</strong>, Amazon Web Services (AWS) Open Source AI/ML Strategist, observed in a blog post, with the current <a href="https://opensource.org/deepdive/drafts/the-open-source-ai-definition-draft-v-0-0-8#link=%7B%22role%22:%22standard%22,%22href%22:%22https://opensource.org/deepdive/drafts/the-open-source-ai-definition-draft-v-0-0-8%22,%22target%22:%22%22,%22absolute%22:%22%22,%22linkText%22:%22OSI%20open-source%20AI%20definition%200.08%20draf%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">OSI open-source AI definition 0.08 draft</a>, "the only aspects of the data that a system desiring to be labeled as 'open source AI' would need to publish are: training methodologies and techniques; training data scope and characteristics; training data provenance (including how data was obtained and selected), training data labeling procedures, and training data cleaning methodology."</p><p>None of that, ferraioli continued, "gives the prospective adopter of the AI system insight into the data that was used to train the system." Without this data, can an AI be open? Ferraioli argues it can't.&#160;</p><p>She's not the only one who holds that position. She quotes her colleague, AWS Principal Open Source Technical Strategist Tom Callaway, who wrote, "Without <a href="https://www.linkedin.com/pulse/why-open-data-necessary-source-ai-tom-callaway-stzcc/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://www.linkedin.com/pulse/why-open-data-necessary-source-ai-tom-callaway-stzcc/%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22requiring%20the%20data%20be%20open%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">requiring the data be open</a>, it is not possible for anyone without the data to fully study or modify the LLM, or distribute all of its source code. You can only use it, tune/tweak it a bit, but you can't dive deep into it to understand why it does what it does."&#160;</p><p><strong>Also:&#160;<a href="https://www.zdnet.com/home-and-office/work-life/more-than-money-open-source-pros-want-these-2-things-from-their-next-jobs/" rel="follow">More than money, open-source pros want these 2 things from their next jobs</a></strong></p><p>He has a good point. At its heart, open source is all about understanding the code. In AI's case, that means the data as well. As Maffulli said at the recent United Nations OSPOs for Good Conference, "While there's broad agreement on the overarching principles, it's becoming obvious that the <a href="https://thenewstack.io/open-source-ai-what-about-data-transparency/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://thenewstack.io/open-source-ai-what-about-data-transparency/%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22devil%20is%20in%20the%20details.%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">devil is in the details.</a>" You can say that again.&#160;</p><p>At the same conference, Sasha Luccioni, Hugging Face's AI and climate lead, argued,&#160; "You can't really expect all companies to be 100% open source as the open source license defines it. You can't expect companies just to give up everything that they're making money off of and do so in a way they're comfortable with."&#160;</p><p>Still, Luccioni believes "a responsible AI license can exist" -- one that is open source friendly -- where you can define your terms of open source. By tweaking the language a little bit, you can move forward in a way that companies, governments, and academia are all comfortable with instead of saying this project or license is not open source.</p><p><strong>Also: </strong><a href="https://www.zdnet.com/article/why-dont-more-people-use-desktop-linux-i-have-a-theory-you-might-not-like/" rel="follow"><strong>Why don't more people use desktop Linux? I have a theory you might not like</strong></a></p><p>Open-source advocates disagreed. I suspect the arguments will continue for years to come.&#160;</p><p>The OSI, with the help of 70 others, consisting of researchers, lawyers, policymakers, activists, and representatives from big tech companies like Meta, Google, and Amazon and groups such as the Linux Foundation and the Alfred P. Sloan Foundation, is wrestling to come up with a workable definition. The goal is to present a stable version of the Open Source AI Definition at the next <a href="https://allthingsopen.org/#link=%7B%22role%22:%22standard%22,%22href%22:%22https://allthingsopen.org/%22,%22target%22:%22_blank%22,%22absolute%22:%22%22,%22linkText%22:%22All%20Things%20Open%22%7D" target="_blank" rel="noopener nofollow" class="c-regularLink">All Things Open</a> conference in Raleigh, North Carolina, from October 27th to the 29th.&#160;</p><p>I'll be there. So strap in, folks. The combination of open-source principles and AI development is driving significant advancements. It's also enabling faster innovation, promoting collaboration, and democratizing access to powerful AI tools. But, its evolution promises to be a long, difficult process.&#160;</p></div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://www.zdnet.com/article/can-ai-even-be-open-source-its-complicated/'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON("https://raw.githubusercontent.com/pdmarc7/thefreedomproject/main/data.json", function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>

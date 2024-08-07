@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Manjaro Linux Starts Experimenting With An Immutable Offering | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="Manjaro Linux Starts Experimenting With An Immutable Offering">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://news.itsfoss.com/content/images/2024/08/manjaro-immutable.png">
+	<meta property="og:url" content="https://news.itsfoss.com/manjaro-immutable-experiment/">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://news.itsfoss.com/content/images/2024/08/manjaro-immutable.png">
+	<meta name="twitter:title" content="Manjaro Linux Starts Experimenting With An Immutable Offering">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://news.itsfoss.com/content/images/2024/08/manjaro-immutable.png">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">Manjaro Linux Starts Experimenting With An Immutable Offering</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Sourav Rudra</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">05 August, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://news.itsfoss.com/content/images/2024/08/manjaro-immutable.png" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div>
+ 
+<p><a href="https://itsfoss.com/immutable-distro/?ref=news.itsfoss.com">Immutable Linux distributions</a> are a type of distro that are future-proof to quite some extent thanks to how they operate. In such systems, the core of the operating system is left untouched, with the root file system being read-only.</p><p>What this allows in is flexibility in handling updates, where a broken update wouldn't deem the operating system unrecoverable (looking at you Ubuntu). Some popular options include <a href="https://nixos.org/?ref=news.itsfoss.com" rel="noreferrer">NixOS</a>, <a href="https://news.itsfoss.com/vanilla-os-2-orchid/">Vanilla OS</a>, <a href="https://fedoraproject.org/silverblue/?ref=news.itsfoss.com" rel="noreferrer">Fedora Silverblue</a>, etc.</p><p>You can find more <a href="https://itsfoss.com/immutable-linux-distros/?ref=news.itsfoss.com" rel="noreferrer">immutable distro options</a> in our list.</p><p>Of course, not everyone is a fan of such distros, with some believing that it's a gimmick.</p><p>This is where <a href="https://manjaro.org/?ref=news.itsfoss.com">Manjaro Linux</a> comes in, it's a community favorite <a href="https://itsfoss.com/arch-based-linux-distros/?ref=news.itsfoss.com" rel="noreferrer">user-friendly Arch-based distro</a> that caters to a wide variety of use cases. Its developers have now dipped their toes into the immutable pond thanks to a recent announcement.</p><p>Let's see what they have been up to. &#128515;</p>&#128679;This is an under-development Linux distro, general use or production use is not recommended.<h2 id="manjaro-immutable-what-to-expect">Manjaro Immutable: What to Expect?</h2><p>Introduced as <strong>a community testing release</strong>, Manjaro Immutable is powered by <a href="https://github.com/arkanelinux/arkdep?ref=news.itsfoss.com" rel="noreferrer">Arkdep</a>, the popular toolkit for creating immutable btrfs-based systems, and <a href="https://news.itsfoss.com/arkane-linux/" rel="noreferrer">Arkane Linux</a>, an &#8220;opinionated, immutable, atomic, multi-root Arch-based distribution&#8221;.</p><p>As this is<strong> an experimental release</strong>, the developers of Manjaro hope to collect feedback from the community to see how the tech underneath Manjaro Immutable fares in day-to-day use. Do keep in mind that this doesn't guarantee a full release someday.</p><p>When <a href="https://forum.manjaro.org/t/manjaro-immutable-out-now-for-community-testing/166364/2?ref=news.itsfoss.com" rel="noreferrer">asked</a> by a community member <strong>whether this would become an official variant for Manjaro</strong>, <a href="https://www.linkedin.com/in/roman-gilg/?ref=news.itsfoss.com">Roman Gilg</a>, CTO at Manjaro Linux said that:</p><blockquote>Our plan is definitely for it to become an official variant of Manjaro. With the community testing version we&#8217;re now gathering some feedback on what people expect from such a variant and what should still go in there or what could be slimmed down.</blockquote><p>There was also <a href="https://forum.manjaro.org/t/manjaro-immutable-out-now-for-community-testing/166364/14?ref=news.itsfoss.com" rel="noreferrer">a question</a> asking <strong>whether an ARM version was planned</strong>.</p><p>To that, Manjaro developer <a href="https://github.com/dennis1248?ref=news.itsfoss.com">Dennis ten Hoove</a> added that it would be possible. However, it's untested, and nothing is planned as of now. But, they might try something in the future.</p><h2 id="%F0%9F%93%A5-get-manjaro-immutable">&#128229; Get Manjaro Immutable</h2><p>You can get the community testing ISO from the official <a href="https://download.manjaro.org/manjaro-gnome-immutable/20240801/manjaro-gnome-immutable-2024.08.01-x86_64.iso?ref=news.itsfoss.com">download mirror</a>.</p><p>You can either install it on bare metal, or opt for running it on a <a href="https://itsfoss.com/virtual-machine/?ref=news.itsfoss.com" rel="noreferrer">virtual machine</a> using VirtualBox or QEMU. Do remember that <strong>enabling EFI is mandatory</strong>, and a minimum 32 GB of storage is required to install the thing.</p><p>Users who want to go the extra mile can <strong>provide feedback to the developers</strong> by joining the dedicated <a href="https://matrix.to/?ref=news.itsfoss.com#/%23Manjaro-Immutable:matrix.org">Matrix channel</a> for it, or by replying to the <a href="https://forum.manjaro.org/t/manjaro-immutable-out-now-for-community-testing/166364?ref=news.itsfoss.com" rel="noreferrer">initial announcement</a> on the Manjaro forum.</p><p>&#128172; Are you looking forward to using an immutable Manjaro? Let me know below!</p><p><strong>Suggested Read </strong>&#128214;</p> 
+ 
+ 
+<h2 id="more-from-its-foss">More from It's FOSS...</h2>
+ 
+
+</div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://news.itsfoss.com/manjaro-immutable-experiment/'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON("https://raw.githubusercontent.com/pdmarc7/thefreedomproject/main/data.json", function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Potential Pitfalls Of Cybersecurity Platformization | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="The Potential Pitfalls Of Cybersecurity Platformization">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://imageio.forbes.com/specials-images/imageserve/66b0f527c5e2cdd7b1c29f32/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds">
+	<meta property="og:url" content="https://www.forbes.com/sites/tonybradley/2024/08/05/the-potential-pitfalls-of-cybersecurity-platformization/">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://imageio.forbes.com/specials-images/imageserve/66b0f527c5e2cdd7b1c29f32/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds">
+	<meta name="twitter:title" content="The Potential Pitfalls Of Cybersecurity Platformization">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://imageio.forbes.com/specials-images/imageserve/66b0f527c5e2cdd7b1c29f32/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">The Potential Pitfalls Of Cybersecurity Platformization</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Tony Bradley</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">05 August, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://imageio.forbes.com/specials-images/imageserve/66b0f527c5e2cdd7b1c29f32/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div>  
+<p>A major theme has emerged as the cybersecurity industry is in the midst of a consolidation phase. High-profile acquisitions and alliances, such as Cisco&#8217;s acquisition of Splunk and IBM&#8217;s alliance with Palo Alto Networks, are reshaping the landscape.</p>
+ 
+ 
+<p>This consolidation, often referred to as platformization, promises a streamlined, all-in-one solution for cybersecurity needs. However, the cyclical nature of the cybersecurity market and the ever-evolving complexity of threats underscore the enduring value of modularity and flexibility.</p>
+ 
+<h2 class="subhead-embed color-accent bg-base font-accent font-size text-align">Cyclical Nature of the Cybersecurity Market</h2>
+<p>The cybersecurity market has always been characterized by cycles of consolidation and diversification. In the early 2000s, giants like McAfee and Symantec dominated the industry, offering comprehensive security suites that promised to address all security needs. This period was marked by a preference for integrated solutions, which provided convenience but often fell short in addressing specialized threats.</p>
+ 
+ 
+<p>As cyber threats evolved, so did the market&#8217;s approach. The rise of innovative new tools and specialized solutions marked a shift towards modularity. These specialized tools provided superior protection against specific threats, demonstrating the limitations of all-encompassing platforms.</p>
+  
+<p>Today, we are witnessing another wave of consolidation. Cisco&#8217;s acquisition of Splunk, IBM&#8217;s strategic alliance with Palo Alto Networks, and the merger of LogRhythm and Exabeam are just a few examples.</p>
+ 
+<p>These moves reflect a trend towards creating comprehensive platforms that promise to simplify cybersecurity management.</p>
+<h2 class="subhead-embed color-accent bg-base font-accent font-size text-align">The Allure of Platformization</h2>
+ 
+<p>The primary allure of platformization lies in its promise of simplicity.</p>
+<p>Companies like Qualys, CrowdStrike, and Palo Alto Networks make the pitch that their platforms can manage all security needs through a unified interface. This approach offers several potential benefits:</p>
+ 
+ 
+ 
+<ul>
+ <li><strong>Unified Management Console</strong>: A single dashboard to monitor and manage security operations.</li>
+ <li><strong>Streamlined Procurement Processes</strong>: Simplifying vendor relationships and reducing administrative overhead.</li>
+ <li><strong>Potential Cost Savings</strong>: Consolidating tools under one platform can lead to financial savings.</li>
+</ul>
+ 
+<p>Some cybersecurity leaders favor a unified approach due to the perceived ease of use and efficiency.</p>
+<p>However, <a href="https://www.linkedin.com/in/brianmurphyreliaquest/" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://www.linkedin.com/in/brianmurphyreliaquest/">Brian Murphy</a>, CEO of <a href="https://www.reliaquest.com/" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://www.reliaquest.com/">ReliaQuest</a>, whose vendor-agnostic security operations platform allows customers to leverage their own security stack, warns that this trend is often vendor-driven rather than customer-centric. He notes, &#8220;The idea that there can be one platform to rule them all is illogical. It has never happened and will never happen in security. Businesses have unique needs that require a mix of technologies.&#8221;</p>
+<h2 class="subhead-embed color-accent bg-base font-accent font-size text-align">The Pitfalls of Platformization</h2>
+<p>While there are some potential benefits to a unified platform, and platform vendors pitch it as a magical solution for all of your cybersecurity woes, not everyone agrees.</p>
+<p>Earlier this year, cybersecurity industry analyst and author of <a href="https://www.amazon.com/Security-Yearbook-2024-Directory-Industry/dp/1394220804" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://www.amazon.com/Security-Yearbook-2024-Directory-Industry/dp/1394220804">Security Yearbook 2024</a> <a href="https://www.linkedin.com/in/stiennon/" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://www.linkedin.com/in/stiennon/">Richard Stiennon</a> <a href="https://stiennon.substack.com/p/there-is-no-such-thing-as-a-cybersecurity" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://stiennon.substack.com/p/there-is-no-such-thing-as-a-cybersecurity">wrote</a>, &#8220;Could we please stop listening to the biggest cybersecurity vendors&#8217; marketing hype? There is ZERO appetite within the enterprise to purchase all of their cybersecurity from the same vendor.&#8221;</p>
+<p>I spoke to Richard, and he emphasized, &#8220;There's no buyer that says, 'God, show me how I can buy everything from one vendor.&#8221;</p>
+<h3 class="subhead3-embed color-body bg-base font-accent font-size text-align">Adequacy vs. Excellence</h3>
+<p>While platformization promises adequacy across various security domains, it rarely achieves excellence in all. No single platform can be the best at everything, leading to potential gaps in protection.</p>
+<p>As Scott Crawford, research director of information security with 451 Research, part of S&amp;P Global Market Intelligence, told me, "The worst-case scenario with the platform is that you get the lowest common denominator within the areas that the platform provider covers." This can lead to potential gaps in protection and an inability to address specific threats effectively.</p>
+<h3 class="subhead3-embed color-body bg-base font-accent font-size text-align">Vendor Lock-In</h3>
+<p>Platformization can result in vendor lock-in, making it difficult to justify the budget for additional tools that might overlap with the existing platform. This can be particularly challenging when CFOs resist new purchases due to significant investments in a current platform.</p>
+<p>Stiennon also pointed out that a platform can also quickly become a single point of failure. &#8220;If it was a single code base, that means that now all of your security products all have the exact same flaws in them, and they'll all get updated and crash at the same time. They'll all get attacked at the same time. You don't have any defense in depth anymore.&#8221;</p>
+<h3 class="subhead3-embed color-body bg-base font-accent font-size text-align">Innovation Stagnation</h3>
+<p>Relying on a single platform can slow the adoption of cutting-edge solutions. Companies often face challenges when introducing new tools alongside entrenched platforms, potentially missing out on innovations that offer better protection.</p>
+<p>ReliaQuest CEO Brian Murphy noted, &#8220;Even the best platform today can&#8217;t account for tomorrow&#8217;s threats.&#8221;</p>
+<h2 class="subhead-embed color-accent bg-base font-accent font-size text-align">The Case for Modularity</h2>
+<p>A modular approach provides several advantages:</p>
+ 
+<ul>
+ <li><strong>Flexibility to Choose Best-of-Breed Solutions</strong>: Organizations can select the best tools for specific needs.</li>
+ <li><strong>Easier Adaptation to Emerging Threats and Technologies</strong>: Modularity allows for quicker adoption of new technologies.</li>
+ <li><strong>Avoidance of Single Points of Failure</strong>: Reducing dependency on one platform minimizes risk.</li>
+</ul>
+ 
+<h2 class="subhead-embed color-accent bg-base font-accent font-size text-align">CISO Perspective</h2>
+<p>Many industry leaders prefer modularity. Anecdotes from industry conferences often highlight the preference for a mix of specialized tools over a single platform.</p>
+<p>&#8220;You have to be flexible. You have to have platform-thinking without going all in on one platform &#8211; in such a way that you can stretch a little bit,&#8221; stressed <a href="https://www.linkedin.com/in/rmccterlinden/" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://www.linkedin.com/in/rmccterlinden/">Rob ter Linden</a>, CISO of <a href="https://www.signify.com/global" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://www.signify.com/global">Signify</a>, one of the world&#8217;s largest commercial lighting companies. &#8220;With our company, with 30,000 people, we may have different business units using different tools or different approaches. We have to provide the same level of security for all those business units even when they are using different tools. Previously we had a single provider that was trying to get everything done with the same technology, and that didn&#8217;t work. If the business units don&#8217;t like the tool, they aren&#8217;t going to use it. And you can&#8217;t just hire more and more people. ReliaQuest is a perfect example of how you can make it all work with that flexibility and automation.&#8221;</p>
+<h2 class="subhead-embed color-accent bg-base font-accent font-size text-align">Best Of Both Worlds</h2>
+<p>Ensuring different tools work together is crucial for comprehensive coverage and reducing vulnerabilities. Interoperability allows organizations to leverage the strengths of multiple tools.</p>
+<p>Successful integrations in the industry highlight the importance of interoperability. An effective cybersecurity solution should facilitate seamless integration, enabling different security tools to communicate and work together effectively.</p>
+<p>Murphy summed it up well. &#8220;We should enable the customer. We should make the customer the platform so that the security team can enable whatever it is their business needs.&#8221;</p>
+<p>A balanced approach that leverages the strengths of both strategies&#8212;platformization and modularity&#8212;while maintaining flexibility to adapt to future challenges is essential. By focusing on integration and interoperability, organizations can create a seamless and robust security ecosystem capable of addressing the ever-evolving threat landscape.</p>
+</div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://www.forbes.com/sites/tonybradley/2024/08/05/the-potential-pitfalls-of-cybersecurity-platformization/'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON("https://raw.githubusercontent.com/pdmarc7/thefreedomproject/main/data.json", function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+    <script>
+
+    </script>
+
+</body>
+</html>
