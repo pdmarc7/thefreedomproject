@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alpaca Simplifies Running Advanced AI Language Models on Linux | The Freedom  Project</title>
+
+	<meta name="description" content="">
+
+	<!-- Open Graph meta tags (for Facebook, LinkedIn, etc.) -->
+	<meta property="og:title" content="Alpaca Makes It Easy To Run Powerful AI Language Models On Linux">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://imageio.forbes.com/specials-images/imageserve/66b3b80e42aabc824e5bf4d4/0x0.jpg?format=jpg&crop=1040,584,x0,y124,safe&height=900&width=1600&fit=bounds">
+	<meta property="og:url" content="https://www.forbes.com/sites/jasonevangelho/2024/08/07/alpaca-makes-it-easy-to-run-powerful-ai-language-models-on-linux/">
+
+	<!-- Twitter Card meta tags (for Twitter) -->
+	<meta name="twitter:card" content="https://imageio.forbes.com/specials-images/imageserve/66b3b80e42aabc824e5bf4d4/0x0.jpg?format=jpg&crop=1040,584,x0,y124,safe&height=900&width=1600&fit=bounds">
+	<meta name="twitter:title" content="Alpaca Makes It Easy To Run Powerful AI Language Models On Linux">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://imageio.forbes.com/specials-images/imageserve/66b3b80e42aabc824e5bf4d4/0x0.jpg?format=jpg&crop=1040,584,x0,y124,safe&height=900&width=1600&fit=bounds">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Include Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<style>
+		.alegreya-sans-thin {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-thin-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-light {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-light-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-regular {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-regular-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-medium {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-medium-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-bold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-bold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-extrabold {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-extrabold-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 800;
+		  font-style: italic;
+		}
+
+		.alegreya-sans-black {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.alegreya-sans-black-italic {
+		  font-family: "Alegreya Sans", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+
+		.roboto-thin {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: normal;
+		}
+
+		.roboto-light {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: normal;
+		}
+
+		.roboto-regular {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.roboto-medium {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.roboto-bold {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: normal;
+		}
+
+		.roboto-black {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: normal;
+		}
+
+		.roboto-thin-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 100;
+		  font-style: italic;
+		}
+
+		.roboto-light-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 300;
+		  font-style: italic;
+		}
+
+		.roboto-regular-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-medium-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 500;
+		  font-style: italic;
+		}
+
+		.roboto-bold-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 700;
+		  font-style: italic;
+		}
+
+		.roboto-black-italic {
+		  font-family: "Roboto", sans-serif;
+		  font-weight: 900;
+		  font-style: italic;
+		}
+
+		.poppins-regular {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		.poppins-medium {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 500;
+		  font-style: normal;
+		}
+
+		.poppins-regular-italic {
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: italic;
+		}
+
+		.roboto-condensed-regular {
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+		h1, h2, h3, h4, h5{
+		  font-family: "Roboto Condensed", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: 400;
+		  font-style: normal;		}
+		}
+
+		p{
+		  font-family: "Poppins", sans-serif;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+	</style>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP5N1WD9F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PPP5N1WD9F');
+    </script>
+
+</head>
+<body>
+	<section>
+		<!-- As a link -->
+		<nav class="navbar navbar-dark bg-dark fixed-top">
+		  <div class="container-fluid">
+		    <a class="navbar-brand roboto-condensed-regular" href="">The Freedom Project</a>
+		  </div>
+		</nav>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-12 mt-5 d-flex justify-content-center align-items-center flex-column" id="title-container">
+					<h3 class="alegreya-sans-medium text-center">Alpaca Simplifies Running Advanced AI Language Models on Linux</h3>
+					<!--<p class="roboto-medium text-secondary mb-0">Authors</p>-->
+					<!--
+						<p class="alegreya-sans-regular mt-0 text-secondary mb-0">By Jason Evangelho</p>
+					--->
+					<p class="alegreya-sans-regular mt-0 text-secondary">07 August, 2024</p>
+
+				</div>
+
+
+
+				<div class="col-12 mt-2 mb-5 alegreya-sans-light d-flex justify-content-center" id="image-container">
+					<img src="https://imageio.forbes.com/specials-images/imageserve/66b3b80e42aabc824e5bf4d4/0x0.jpg?format=jpg&crop=1040,584,x0,y124,safe&height=900&width=1600&fit=bounds" class="img-fluid shadow" style="max-height: 280px; object-fit: cover; border-radius: 10px; border: none">
+				</div>
+
+				<div class="col-12 mb-3 alegreya-sans-regular" id="secondary-keyword-summary" style="font-size: 18px">
+					<div><p>For those interested in using an AI language model (often referred to as an LLM or "Large Language Model") like <a href="https://www.forbes.com/sites/danfitzpatrick/2024/08/03/5-educators-leveraging-chatgpt-to-save-time/" target="_self" class="color-link" title="https://www.forbes.com/sites/danfitzpatrick/2024/08/03/5-educators-leveraging-chatgpt-to-save-time/">ChatGPT</a> as a digital assistant, there may be concerns regarding data privacy and how information is handled. The features of Microsoft’s CoPilot might be appealing, but potential privacy issues could be a deterrent. Additionally, some users may wish to avoid subscription fees or being locked into third-party ecosystems, opting instead for open-source software. For these reasons, running an AI model locally could be the ideal solution.</p>
+
+<p>Initial exploration into running LLMs locally on Linux might lead to the use of command-line tools like <a href="https://github.com/ollama/ollama" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://github.com/ollama/ollama">Ollama</a>. While Ollama is fully functional and offers a powerful terminal experience, it may not provide the most user-friendly interface for beginners.</p>
+
+<p>Another option is <a href="https://lmstudio.ai/" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://lmstudio.ai/">LM Studio</a>, a cross-platform solution that operates locally on Windows, macOS, and Linux. LM Studio is powerful and flexible, featuring a traditional graphical user interface (GUI). However, this flexibility can sometimes be overwhelming or lead to potential issues. Additionally, it is worth noting that only the command-line tool of LM Studio is open source, while the rest of the software remains proprietary. Although there is nothing inherently wrong with closed-source software, open-source projects have the advantage of being able to continue development even if the original developer ceases work.</p>
+
+<p>This journey may eventually lead to <a href="https://jeffser.com/alpaca/" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://jeffser.com/alpaca/">Alpaca</a>, which serves as a graphical frontend for Ollama. The key takeaway is that Alpaca is designed to be easy to use.</p>
+
+<p>Alpaca is streamlined and user-friendly. It can be installed on any Linux distribution <a href="https://flathub.org/apps/com.jeffser.Alpaca" rel="nofollow noopener noreferrer" target="_blank" class="color-link" title="https://flathub.org/apps/com.jeffser.Alpaca">via Flathub</a>, and it includes the Ollama backend. There is no complex configuration required; simply choose an AI model to download and start interacting.</p>
+
+<p>Users might begin with Meta’s newly released Llama 3.1, an open-source model available in 8 billion, 70 billion, and 405 billion parameter sizes. Parameters measure a language model’s complexity, with higher numbers indicating greater capability. The 405 billion parameter model, for example, requires a substantial 231GB download. For reference, ChatGPT 3’s parameter size is 175 billion. Running these extensive models could challenge even the most robust consumer PCs, but smaller parameter models are generally sufficient for serving as effective digital assistants and chatbots.</p>
+
+<p>A useful feature of Alpaca is its native integration into the system’s notifications. This allows the application to be minimized while it processes responses, with notifications alerting the user when an answer is ready.</p>
+
+<p>If a particular model does not meet expectations, removing it and freeing up disk space is straightforward. The “Manage Models” menu allows users to search for, download, and delete a wide range of models.</p>
+
+<p>The Alpaca project was initiated in June 2024, with the first stable release launching just a few weeks ago. While improvements are being implemented consistently, one issue may affect certain AMD GPU users: Alpaca may utilize CPU resources instead of GPU, leading to slower processing. This issue appears to be related to ROCm, but the developer is aware of the problem and is working on a solution.</p>
+
+</div>
+				</div>
+
+				<!--<div class="col-12 mb-3 alegreya-sans-light d-flex justify-content-start" id="secondary-keyword-summary">
+					<a class="btn btn-dark btn-lg shadow" href='https://www.forbes.com/sites/jasonevangelho/2024/08/07/alpaca-makes-it-easy-to-run-powerful-ai-language-models-on-linux/'><div class="d-flex"><p class="me-2 mb-0">Continue Reading</p> <i class="bi bi-arrow-right-circle"></i></div></a>
+				</div>-->
+
+
+				<!--<div class="col-12 mb-4 roboto-condensed-regular mt-4">
+					
+				</div>-->
+			</div>
+
+		</div>
+	</section>
+
+	<section id="recentArticlesSection">
+
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex justify-content-center py-1">
+						<p class="alegreya-sans-medium text-center ms-2" style="font-size: 18px; color: grey;">The Freedom Project - &copy; <span id="currentYear"></span> 😌 </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	   <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Find the span element with the id 'currentYear'
+        const yearElement = document.getElementById('currentYear');
+        
+        // Set the text content of the span element to the current year
+        yearElement.textContent = currentYear;
+    </script>
+
+	<!-- Bootstrap Bundle from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery from CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+				$.getJSON("https://raw.githubusercontent.com/pdmarc7/thefreedomproject/main/data.json", function(data){
+						//console.log(data)
+
+						var randomSelectedArticles = getRandomElements(data, 6)
+
+					$('#recentArticlesSection').append(
+						$('<div>').addClass('container').append(
+							$('<div>').addClass('row').append(
+								$('<div>').addClass('col-12').append(
+									$('<p>').addClass('h3 alegreya-sans-medium mb-2').text('Recent international news')
+								),
+
+								buildRandomArticleArr(randomSelectedArticles)
+							)
+						)
+					)
+				});
+
+				function getRandomElements(arr, n) {
+				    // Shuffle array using Fisher-Yates shuffle algorithm
+				    for (let i = arr.length - 1; i > 0; i--) {
+				        const j = Math.floor(Math.random() * (i + 1));
+				        [arr[i], arr[j]] = [arr[j], arr[i]];
+				    }
+
+				    // Return the first n elements
+				    return arr.slice(0, n);
+				}
+
+
+
+				function buildArticleCard(article){
+					return $('<div>').addClass('card').append(
+
+						$('<img>').attr({
+							'src': article["top_image"],
+							'alt': ''
+						}).addClass('card-img-top'),
+
+						$('<div>').addClass('card-body').append(
+							$('<p>').addClass('h5 card-title alegreya-sans-medium').append(`${article.title}`),
+							$('<a>').attr({
+								'href': `http://${window.location.hostname}:${window.location.port}`+'/'+article.url
+							}).addClass("btn btn-dark").append('Read More')
+						)
+					)
+				}
+
+				function buildRandomArticleArr(selectedArticles){
+					var articles = []
+
+					for (const n of selectedArticles){
+						articles.push(
+							$('<div>').addClass('col-12 col-md-4 mb-4').append(
+								buildArticleCard(n)
+							)
+						)
+					}
+
+					return articles
+				}
+
+		})
+	</script>
+
+
+	<!-- GSAP and ScrollTrigger from CDN -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.9.1/dist/ScrollTrigger.min.js"></script>-->
+	<script type='text/javascript' src='//pl23973864.highratecpm.com/2b/ef/af/2befaf6fd697cdf4f09ff967d501bb79.js'></script>
+
+</body>
+</html>
