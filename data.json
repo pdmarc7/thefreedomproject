@@ -1,56 +1,56 @@
 [
     {
         "community": "technology",
-        "url": "technology/open-source-ai-model-accurately-forcasted-olive-oil-prices.html",
         "title": "Open Source AI Model Accurately Forecaseted Olive Oil Prices",
-        "top_image": "https://img-cdn.oliveoiltimes.com/cb:XkPz.23f19/w:auto/h:auto/q:67/ig:avif/f:best/https://www.oliveoiltimes.com/media/2024/08/r5mb.jpg"
+        "top_image": "https://img-cdn.oliveoiltimes.com/cb:XkPz.23f19/w:auto/h:auto/q:67/ig:avif/f:best/https://www.oliveoiltimes.com/media/2024/08/r5mb.jpg",
+        "url": "technology/open-source-ai-model-accurately-forcasted-olive-oil-prices.html"
     },
     {
         "community": "cybersecurity",
-        "url": "cybersecurity/ibm-accelerates-threat-detection-and-response-with-new-gen-aipowered-cybersecurity-assistant.html",
         "title": "IBM New Cybersecurity Assistant Tackles Threat Detction And Response with Artificial Intelligence",
-        "top_image": "https://cdn.pixabay.com/photo/2022/04/04/16/42/technology-7111804_960_720.jpg"
+        "top_image": "https://cdn.pixabay.com/photo/2022/04/04/16/42/technology-7111804_960_720.jpg",
+        "url": "cybersecurity/ibm-accelerates-threat-detection-and-response-with-new-gen-aipowered-cybersecurity-assistant.html"
     },
     {
         "community": "bitcoin",
-        "url": "bitcoin/a-new-milestone-for-bitcoin-hardware-wallets.html",
         "title": "A New Milestone For Bitcoin Hardware Wallets",
-        "top_image": "https://imageio.forbes.com/specials-images/imageserve/66b330877a01857093612f9c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
+        "top_image": "https://imageio.forbes.com/specials-images/imageserve/66b330877a01857093612f9c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+        "url": "bitcoin/a-new-milestone-for-bitcoin-hardware-wallets.html"
     },
     {
         "community": "privacy",
-        "url": "privacy/implications-of-google-decision-to-keep-cookies-for-digital-advertising.html",
         "title": "Implications of Google\u2019s Decision to Keep Cookies for Digital Advertising",
-        "top_image": "https://www.marketingdive.com/imgproxy/UCqOMUPU4rypUP10ytsMNjiqgps_XqvAYqMTP19xFpo/g:ce/rs:fit:770:435/bG9jYWw6Ly8vZGl2ZWltYWdlL0dldHR5SW1hZ2VzLTE4Njc5Njk5MjVfMS5qcGc=.webp"
+        "top_image": "https://www.marketingdive.com/imgproxy/UCqOMUPU4rypUP10ytsMNjiqgps_XqvAYqMTP19xFpo/g:ce/rs:fit:770:435/bG9jYWw6Ly8vZGl2ZWltYWdlL0dldHR5SW1hZ2VzLTE4Njc5Njk5MjVfMS5qcGc=.webp",
+        "url": "privacy/implications-of-google-decision-to-keep-cookies-for-digital-advertising.html"
     },
     {
         "community": "linux",
-        "url": "linux/alpaca-simplifies-running-advanced-ai-language-models-on-linux.html",
         "title": "Alpaca Simplifies Running Advanced AI Language Models on Linux",
-        "top_image": "https://imageio.forbes.com/specials-images/imageserve/66b3b80e42aabc824e5bf4d4/0x0.jpg?format=jpg&crop=1040,584,x0,y124,safe&height=900&width=1600&fit=bounds"
+        "top_image": "https://imageio.forbes.com/specials-images/imageserve/66b3b80e42aabc824e5bf4d4/0x0.jpg?format=jpg&crop=1040,584,x0,y124,safe&height=900&width=1600&fit=bounds",
+        "url": "linux/alpaca-simplifies-running-advanced-ai-language-models-on-linux.html"
     },
     {
         "community": "opensource",
-        "url": "opensource/lagent-a-minimalistic-open-source-python-framework-for-efficiently-creating-agents-based-on-large-language-models-llms.html",
         "title": "Lagent: A Minimalistic Open-Source Python Framework for Efficiently Creating Agents Based on Large Language Models (LLMs)",
-        "top_image": "https://private-user-images.githubusercontent.com/24351120/262059491-cefc4145-2ad8-4f80-b88b-97c05d1b9d3e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjMxNzUwODMsIm5iZiI6MTcyMzE3NDc4MywicGF0aCI6Ii8yNDM1MTEyMC8yNjIwNTk0OTEtY2VmYzQxNDUtMmFkOC00ZjgwLWI4OGItOTdjMDVkMWI5ZDNlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODA5VDAzMzk0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRlOTU1OTI3MDdjNjY4MjI3ZmVjOGQyZGExMjFlMTQ5N2RlMWRhM2M3MzRkMjQ2YWVhNTFiNGMwYWNkMmVjNzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.EXh83x7b80y-o_9G8zfYhKtds8swmz4qr9oLctktBfE"
+        "top_image": "https://img.freepik.com/free-photo/digital-art-ai-technology-background_23-2151719581.jpg?t=st=1723177717~exp=1723181317~hmac=83002180ac0685224249b6a36e370237bb67b4c46d3433ad44669a659753f839&w=826",
+        "url": "opensource/lagent-a-minimalistic-open-source-python-framework-for-efficiently-creating-agents-based-on-large-language-models-llms.html"
     },
     {
         "community": "politics",
-        "url": "politics/ivanka-trump-reenters-the-political-scene-by-joining-her-father-donald trump-on-stage-following-his-speech-at-the-rnc.html",
         "title": "Ivanka Trump reenters the political scene by joining her father, Donald Trump, on stage following his speech at the RNC",
-        "top_image": "https://media.zenfs.com/en/the_independent_577/983100b3c08b9a79ce1edc8b4ecfe996"
+        "top_image": "https://media.zenfs.com/en/the_independent_577/983100b3c08b9a79ce1edc8b4ecfe996",
+        "url": "politics/ivanka-trump-reenters-the-political-scene-by-joining-her-father-donald trump-on-stage-following-his-speech-at-the-rnc.html"
     },
     {
         "community": "climate",
-        "url": "climate/whether-patterns-in-antarctica-may-help-sciencists-predict-the-future-of-climate-change.html",
         "title": "Whether Patterns In Antarctica May Help Sciencists Predict The Future Of Climate Change| The Freedom  Project",
-        "top_image": "https://scx2.b-cdn.net/gfx/news/2024/weather-whiplash-in-an.jpg"
+        "top_image": "https://scx2.b-cdn.net/gfx/news/2024/weather-whiplash-in-an.jpg",
+        "url": "climate/whether-patterns-in-antarctica-may-help-sciencists-predict-the-future-of-climate-change.html"
     },
     {
         "community": "science",
-        "url": "science/nasa-has-indicated-that-astronauts-aboard-boeings-starliner-may-return-to-earth-using-spacexs-spacecraft-in-2025.html",
         "title": "NASA Has Indicated That Astronauts Aboard Boeing's Starliner May Return To Earth Using SpaceX's Spacecraft In 2025",
-        "top_image": "https://static01.nyt.com/images/2024/08/07/science/07starliner/07starliner-facebookJumbo.jpg"
+        "top_image": "https://static01.nyt.com/images/2024/08/07/science/07starliner/07starliner-facebookJumbo.jpg",
+        "url": "science/nasa-has-indicated-that-astronauts-aboard-boeings-starliner-may-return-to-earth-using-spacexs-spacecraft-in-2025.html"
     }
 ]
